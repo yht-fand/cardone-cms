@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-lazy-init="true">
+    <!-- 文章 -->
+    <bean id="top.cardone.cms.dao.ArticleDao"
+          class="top.cardone.cms.dao.impl.ArticleDaoImpl">
+        <property name="configTable">
+            <map>
+                <entry key="config">
+                    <map>
+                        <entry key="sqlFileRoot" value="/cardone/cms/article/"/>
+                        <entry key="pks" value="articleId"/>
+                        <entry key="codes" value="articleId"/>
+                    </map>
+                </entry>
+                <entry key="insert">
+                    <map>
+                        <entry key="articleId" value="getRandomUUIDFunc"/>
+                        <entry key="creator" value="getLoginUserIdFunc"/>
+                        <entry key="createDate" value="getNowDateFunc"/>
+                    </map>
+                </entry>
+                <entry key="update">
+                    <map>
+                        <entry key="modifier" value="getLoginUserIdFunc"/>
+                        <entry key="modifyDate" value="getNowDateFunc"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <!-- 文章 -->
+    <bean id="top.cardone.cms.service.ArticleService"
+          class="top.cardone.cms.service.impl.ArticleServiceImpl">
+        <property name="dao" ref="top.cardone.cms.dao.ArticleDao"/>
+    </bean>
+
+    <bean parent="messageListenerContainerParnet">
+        <property name="messageListener">
+            <bean  parent="exceptionParnet">
+                <property name="serviceInterface" value="top.cardone.cms.service.ArticleService"/>
+                <property name="service" ref="top.cardone.cms.service.ArticleService"/>
+            </bean>
+        </property>
+        <property name="destination">
+            <bean class="org.apache.activemq.command.ActiveMQQueue">
+                <constructor-arg value="top.cardone.cms.service.ArticleService"/>
+            </bean>
+        </property>
+    </bean>
+</beans>
