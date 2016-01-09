@@ -12,5 +12,5 @@ public class ArticleDto extends Article {
     /**
      * 版本号
      */
-    private static final long serialVersionUID = 475136705947187162L;
+    private static final long serialVersionUID = 685429550522914430L;
 }

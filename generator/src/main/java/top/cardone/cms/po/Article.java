@@ -12,7 +12,7 @@ public class Article implements java.io.Serializable {
     /**
      * 版本号
      */
-    private static final long serialVersionUID = 422328858488260008L;
+    private static final long serialVersionUID = 533096849844176646L;
 
     /**
      * 文章标识
