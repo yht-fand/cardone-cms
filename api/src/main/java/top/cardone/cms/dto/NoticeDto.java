@@ -12,5 +12,5 @@ public class NoticeDto extends Notice {
     /**
      * 版本号
      */
-    private static final long serialVersionUID = 151789038790739574L;
+    private static final long serialVersionUID = 839711559152410483L;
 }

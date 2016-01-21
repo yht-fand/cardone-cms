@@ -1,1 +1,0 @@
-DELETE FROM t_article WHERE INSTR(:ids, articleId) > 0

@@ -13,7 +13,7 @@
     <groupId>top.cardone.cms</groupId>
     <artifactId>cardone-cms-implements-default</artifactId>
     <version>${project.parent.version}</version>
-    <name>cardone cms implements default</name>
+    <name>${project.artifactId}</name>
     <description>cardone cms implements default</description>
     <packaging>jar</packaging>
 

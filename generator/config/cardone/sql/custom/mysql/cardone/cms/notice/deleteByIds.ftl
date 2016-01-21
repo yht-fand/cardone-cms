@@ -1,1 +1,0 @@
-DELETE FROM t_notice WHERE INSTR(:ids, noticeId) > 0

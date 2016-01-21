@@ -13,7 +13,7 @@
     <groupId>top.cardone.cms</groupId>
     <artifactId>cardone-cms-root</artifactId>
     <version>${project.parent.version}</version>
-    <name>cardone cms root</name>
+    <name>${project.artifactId}</name>
     <description>cardone cms root</description>
     <packaging>pom</packaging>
 

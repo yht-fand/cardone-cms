@@ -13,7 +13,7 @@
     <groupId>top.cardone.cms</groupId>
     <artifactId>cardone-cms-api</artifactId>
     <version>${project.parent.version}</version>
-    <name>cardone cms api</name>
+    <name>${project.artifactId}</name>
     <description>cardone cms api</description>
     <packaging>jar</packaging>
 

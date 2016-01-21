@@ -1,33 +1,24 @@
-package top.cardone.cms.func.notice.webapi.vi;
+package top.cardone.cms.func.notice.webapi.v1;
 
+import com.google.common.collect.Maps;
 import org.springframework.stereotype.Component;
+import top.cardone.cms.dto.NoticeDto;
+import top.cardone.cms.service.NoticeService;
+import top.cardone.context.ApplicationContextHolder;
 import top.cardone.core.util.func.Func1;
 
-import top.cardone.cms.dto.NoticeDto;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-
-import java.util.List;
 import java.util.Map;
 
 /**
  * 公告 - 查询
  */
-@Component("/web-api/v1/cms/notice/r0001.json")
-public class R0001Func implements Func1<Map<String, Object>, Map<String, Object>> {
+@Component("/web-api/v1/configuration/notice/r0001.json")
+public class R0001Func implements Func1<Object, Map<String, Object>> {
     @Override
-    public Map<String, Object> func(Map<String, Object> map) {
-        return null;
-    }
+    public Object func(Map<String, Object> map) {
+        NoticeDto noticeDto = ApplicationContextHolder.getBean(NoticeService.class).findOne(NoticeDto.class, map);
 
-    private List<Map<String, Object>> toMapList(List<NoticeDto> noticeDtoList) {
-        List<Map<String, Object>> mapList = Lists.newArrayList();
-
-        for (NoticeDto noticeDto : noticeDtoList) {
-            mapList.add(this.toMap(noticeDto));
-        }
-
-        return mapList;
+        return this.toMap(noticeDto);
     }
 
     private Map<String, Object> toMap(NoticeDto noticeDto) {
