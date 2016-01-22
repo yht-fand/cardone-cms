@@ -45,8 +45,14 @@ RELEASE_DATE AS releaseDate
 <#case "roleCodes">
 ROLE_CODES AS roleCodes
 <#break>
+<#case "siteCode">
+SITE_CODE AS siteCode
+<#break>
 <#case "stateCode">
 STATE_CODE AS stateCode
+<#break>
+<#case "systemInfoCode">
+SYSTEM_INFO_CODE AS systemInfoCode
 <#break>
 <#case "title">
 TITLE AS title

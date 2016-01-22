@@ -69,8 +69,16 @@ ${prefixName} `RELEASE_DATE`
 ${prefixName} `ROLE_CODES`
 <#assign prefixName = ','>
 </#if>
+<#if (insert_siteCode??) && (insert_siteCode_value??)>
+${prefixName} `SITE_CODE`
+<#assign prefixName = ','>
+</#if>
 <#if (insert_stateCode??) && (insert_stateCode_value??)>
 ${prefixName} `STATE_CODE`
+<#assign prefixName = ','>
+</#if>
+<#if (insert_systemInfoCode??) && (insert_systemInfoCode_value??)>
+${prefixName} `SYSTEM_INFO_CODE`
 <#assign prefixName = ','>
 </#if>
 <#if (insert_title??) && (insert_title_value??)>
@@ -160,8 +168,16 @@ ${prefixName} :insert_releaseDate_value
 ${prefixName} :insert_roleCodes_value
 <#assign prefixName = ','>
 </#if>
+<#if (insert_siteCode??) && (insert_siteCode_value??)>
+${prefixName} :insert_siteCode_value
+<#assign prefixName = ','>
+</#if>
 <#if (insert_stateCode??) && (insert_stateCode_value??)>
 ${prefixName} :insert_stateCode_value
+<#assign prefixName = ','>
+</#if>
+<#if (insert_systemInfoCode??) && (insert_systemInfoCode_value??)>
+${prefixName} :insert_systemInfoCode_value
 <#assign prefixName = ','>
 </#if>
 <#if (insert_title??) && (insert_title_value??)>
