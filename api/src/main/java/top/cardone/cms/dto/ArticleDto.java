@@ -9,8 +9,4 @@ import top.cardone.cms.po.Article;
  */
 @lombok.ToString(callSuper = true)
 public class ArticleDto extends Article {
-    /**
-     * 版本号
-     */
-    private static final long serialVersionUID = 401176908675146838L;
 }

@@ -9,10 +9,6 @@ import java.util.Date;
  */
 @lombok.ToString(callSuper = true)
 public class Article implements java.io.Serializable {
-    /**
-     * 版本号
-     */
-    private static final long serialVersionUID = 311879023997864806L;
 
     /**
      * 文章标识

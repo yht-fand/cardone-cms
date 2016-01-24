@@ -14,7 +14,7 @@
     <artifactId>cardone-cms-implements-default</artifactId>
     <version>${project.parent.version}</version>
     <name>${project.artifactId}</name>
-    <description>cardone cms implements default</description>
+    <description>top.cardone.cms cardone-cms-implements default</description>
     <packaging>jar</packaging>
 
     <dependencies>

@@ -9,8 +9,4 @@ import top.cardone.cms.po.Notice;
  */
 @lombok.ToString(callSuper = true)
 public class NoticeDto extends Notice {
-    /**
-     * 版本号
-     */
-    private static final long serialVersionUID = 839711559152410483L;
 }

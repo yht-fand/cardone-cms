@@ -14,13 +14,18 @@
     <artifactId>cardone-cms-api</artifactId>
     <version>${project.parent.version}</version>
     <name>${project.artifactId}</name>
-    <description>cardone cms api</description>
+    <description>top.cardone.cms cardone-cms-api</description>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>top.cardone</groupId>
             <artifactId>cardone-data-commons-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>top.cardone</groupId>
+            <artifactId>cardone-cache-api</artifactId>
         </dependency>
     </dependencies>
 </project>

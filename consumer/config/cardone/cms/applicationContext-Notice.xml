@@ -8,7 +8,7 @@
         <property name="serviceInterface" value="top.cardone.cms.service.NoticeService"/>
         <property name="queue">
             <bean class="org.apache.activemq.command.ActiveMQQueue">
-                <constructor-arg value="top.cardone.cms.service.NoticeService"/>
+                <constructor-arg value="cardone-cms-${cardone-cms-version}:top.cardone.cms.service.NoticeService"/>
             </bean>
         </property>
     </bean>

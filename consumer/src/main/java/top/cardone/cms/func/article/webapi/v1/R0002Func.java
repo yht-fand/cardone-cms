@@ -53,7 +53,9 @@ public class R0002Func implements Func1<Object, Map<String, Object>> {
         map.put("recom", articleDto.getRecom());
         map.put("releaseDate", articleDto.getReleaseDate());
         map.put("roleCodes", articleDto.getRoleCodes());
+        map.put("siteCode", articleDto.getSiteCode());
         map.put("stateCode", articleDto.getStateCode());
+        map.put("systemInfoCode", articleDto.getSystemInfoCode());
         map.put("title", articleDto.getTitle());
         map.put("typeCode", articleDto.getTypeCode());
         map.put("version", articleDto.getVersion());

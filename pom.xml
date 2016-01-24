@@ -14,7 +14,7 @@
     <artifactId>cardone-cms-root</artifactId>
     <version>${project.parent.version}</version>
     <name>${project.artifactId}</name>
-    <description>cardone cms root</description>
+    <description>top.cardone.cms cardone-cms-root</description>
     <packaging>pom</packaging>
 
     <modules>

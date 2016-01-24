@@ -39,7 +39,9 @@ public class R0004Func implements Func1<Object, Map<String, Object>> {
         map.put("pictureUrl", noticeDto.getPictureUrl());
         map.put("releaseDate", noticeDto.getReleaseDate());
         map.put("roleCodes", noticeDto.getRoleCodes());
+        map.put("siteCode", noticeDto.getSiteCode());
         map.put("stateCode", noticeDto.getStateCode());
+        map.put("systemInfoCode", noticeDto.getSystemInfoCode());
         map.put("title", noticeDto.getTitle());
         map.put("typeCode", noticeDto.getTypeCode());
         map.put("version", noticeDto.getVersion());
