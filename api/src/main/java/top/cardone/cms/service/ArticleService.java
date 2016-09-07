@@ -140,4 +140,18 @@ public interface ArticleService extends PageService {
      */
     @CacheEvict(value = "top.cardone.cms.service.ArticleService", allEntries = true)
     int[] updateListCache(List<Object> updateList);
+
+	/**
+     * @see top.cardone.cms.service.ArticleService#saveList
+     */
+    @CacheEvict(value = "top.cardone.cms.service.ArticleService", allEntries = true)
+    int[][] saveListCache(List<Object> saveList);
+	
+    /**
+     * 查询文章对象
+     *
+     * @param articleId 文章标识
+     * @return 文章对象
+     */
+    Map<String, Object> findOneByArticleId(Object articleId);
 }

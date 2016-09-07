@@ -130,4 +130,15 @@ public class ArticleServiceImpl extends PageServiceImpl<ArticleDao> implements t
     public int[] updateListCache(List<Object> updateList) {
         return this.updateList(updateList);
     }
+
+    @Override
+    @Transactional
+    public int[][] saveListCache(List<Object> saveList) {
+        return this.saveList(saveList);
+    }
+	
+    @Override
+    public Map<String, Object> findOneByArticleId(Object articleId) {
+        return this.dao.findOneByArticleId(articleId);
+    }
 }

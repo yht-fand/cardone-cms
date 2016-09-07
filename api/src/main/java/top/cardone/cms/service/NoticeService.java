@@ -140,4 +140,18 @@ public interface NoticeService extends PageService {
      */
     @CacheEvict(value = "top.cardone.cms.service.NoticeService", allEntries = true)
     int[] updateListCache(List<Object> updateList);
+
+	/**
+     * @see top.cardone.cms.service.NoticeService#saveList
+     */
+    @CacheEvict(value = "top.cardone.cms.service.NoticeService", allEntries = true)
+    int[][] saveListCache(List<Object> saveList);
+	
+    /**
+     * 查询公告对象
+     *
+     * @param noticeId 公告标识
+     * @return 公告对象
+     */
+    Map<String, Object> findOneByNoticeId(Object noticeId);
 }

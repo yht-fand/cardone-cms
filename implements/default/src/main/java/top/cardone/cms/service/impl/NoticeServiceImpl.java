@@ -130,4 +130,15 @@ public class NoticeServiceImpl extends PageServiceImpl<NoticeDao> implements top
     public int[] updateListCache(List<Object> updateList) {
         return this.updateList(updateList);
     }
+
+    @Override
+    @Transactional
+    public int[][] saveListCache(List<Object> saveList) {
+        return this.saveList(saveList);
+    }
+	
+    @Override
+    public Map<String, Object> findOneByNoticeId(Object noticeId) {
+        return this.dao.findOneByNoticeId(noticeId);
+    }
 }
