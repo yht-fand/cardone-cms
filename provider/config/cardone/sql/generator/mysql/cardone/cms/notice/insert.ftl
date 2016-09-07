@@ -1,5 +1,5 @@
 INSERT
-INTO t_notice
+INTO c1_notice
 (<#assign prefixName = ' '>
 <#if (insert_beginDate??) && (insert_beginDate_value??)>
 ${prefixName} `BEGIN_DATE`
@@ -51,10 +51,6 @@ ${prefixName} `PERMISSION_CODES`
 </#if>
 <#if (insert_pictureUrl??) && (insert_pictureUrl_value??)>
 ${prefixName} `PICTURE_URL`
-<#assign prefixName = ','>
-</#if>
-<#if (insert_releaseDate??) && (insert_releaseDate_value??)>
-${prefixName} `RELEASE_DATE`
 <#assign prefixName = ','>
 </#if>
 <#if (insert_roleCodes??) && (insert_roleCodes_value??)>
@@ -142,10 +138,6 @@ ${prefixName} :insert_permissionCodes_value
 </#if>
 <#if (insert_pictureUrl??) && (insert_pictureUrl_value??)>
 ${prefixName} :insert_pictureUrl_value
-<#assign prefixName = ','>
-</#if>
-<#if (insert_releaseDate??) && (insert_releaseDate_value??)>
-${prefixName} :insert_releaseDate_value
 <#assign prefixName = ','>
 </#if>
 <#if (insert_roleCodes??) && (insert_roleCodes_value??)>

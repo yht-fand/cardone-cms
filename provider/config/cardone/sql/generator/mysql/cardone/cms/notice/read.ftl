@@ -39,9 +39,6 @@ PERMISSION_CODES AS permissionCodes
 <#case "pictureUrl">
 PICTURE_URL AS pictureUrl
 <#break>
-<#case "releaseDate">
-RELEASE_DATE AS releaseDate
-<#break>
 <#case "roleCodes">
 ROLE_CODES AS roleCodes
 <#break>
@@ -69,5 +66,5 @@ WF_ID AS wfId
 <#default>
 COUNT(1) AS COUNT_
 </#switch>
-FROM t_notice
+FROM c1_notice
 <#include "where.ftl">

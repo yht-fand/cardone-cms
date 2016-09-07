@@ -75,5 +75,5 @@ WF_ID AS wfId
 <#default>
 COUNT(1) AS COUNT_
 </#switch>
-FROM t_article
+FROM c1_article
 <#include "where.ftl">

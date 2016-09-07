@@ -1,5 +1,5 @@
 INSERT
-INTO t_article
+INTO c1_article
 (<#assign prefixName = ' '>
 <#if (insert_articleId??) && (insert_articleId_value??)>
 ${prefixName} `ARTICLE_ID`

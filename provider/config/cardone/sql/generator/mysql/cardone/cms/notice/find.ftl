@@ -52,10 +52,6 @@ ${prefixName} `PERMISSION_CODES`
 ${prefixName} `PICTURE_URL`
 <#assign prefixName = ','>
 </#if>
-<#if (select_releaseDate??)>
-${prefixName} `RELEASE_DATE`
-<#assign prefixName = ','>
-</#if>
 <#if (select_roleCodes??)>
 ${prefixName} `ROLE_CODES`
 <#assign prefixName = ','>
@@ -102,7 +98,6 @@ ${prefixName} `WF_ID`
 , `ORG_CODE`
 , `PERMISSION_CODES`
 , `PICTURE_URL`
-, `RELEASE_DATE`
 , `ROLE_CODES`
 , `SITE_CODE`
 , `STATE_CODE`
@@ -112,7 +107,7 @@ ${prefixName} `WF_ID`
 , `VERSION_`
 , `WF_ID`
 </#if>
-FROM t_notice
+FROM c1_notice
 <#include "where.ftl">
 <#assign prefixName = 'ORDER BY'>
 <#if (order_by_beginDate??)>
@@ -165,10 +160,6 @@ ${prefixName} `PERMISSION_CODES` ${order_by_permissionCodes_value!}
 </#if>
 <#if (order_by_pictureUrl??)>
 ${prefixName} `PICTURE_URL` ${order_by_pictureUrl_value!}
-<#assign prefixName = ','>
-</#if>
-<#if (order_by_releaseDate??)>
-${prefixName} `RELEASE_DATE` ${order_by_releaseDate_value!}
 <#assign prefixName = ','>
 </#if>
 <#if (order_by_roleCodes??)>

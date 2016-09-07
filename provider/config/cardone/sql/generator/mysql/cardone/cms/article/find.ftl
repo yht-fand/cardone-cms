@@ -122,7 +122,7 @@ ${prefixName} `WF_ID`
 , `VERSION_`
 , `WF_ID`
 </#if>
-FROM t_article
+FROM c1_article
 <#include "where.ftl">
 <#assign prefixName = 'ORDER BY'>
 <#if (order_by_articleId??)>

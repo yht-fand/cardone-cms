@@ -17,7 +17,7 @@
                 </entry>
                 <entry key="insert">
                     <map>
-                        <entry key="articleId" value="getRandomUUIDFunc"/>
+                        <entry key="articleId" value="readRandomUUIDFunc"/>
                         <entry key="createdByCode" value="readCreatedByCodeFunc"/>
                         <entry key="createdDate" value="readCreatedDateFunc"/>
                     </map>
@@ -31,24 +31,9 @@
             </map>
         </property>
     </bean>
-
-    <!-- 文章 -->
+	
     <bean id="top.cardone.cms.service.ArticleService"
           class="top.cardone.cms.service.impl.ArticleServiceImpl">
-        <property name="dao" ref="top.cardone.cms.dao.ArticleDao"/>
-    </bean>
-
-    <bean parent="messageListenerContainerParnet">
-        <property name="messageListener">
-            <bean  parent="exceptionParnet">
-                <property name="serviceInterface" value="top.cardone.cms.service.ArticleService"/>
-                <property name="service" ref="top.cardone.cms.service.ArticleService"/>
-            </bean>
-        </property>
-        <property name="destination">
-            <bean class="org.apache.activemq.command.ActiveMQQueue">
-                <constructor-arg value="cardone-cms-${cardone-cms-version}:top.cardone.cms.service.ArticleService"/>
-            </bean>
-        </property>
-    </bean>
+		<property name="dao" ref="top.cardone.cms.dao.ArticleDao"/>
+	</bean>
 </beans>

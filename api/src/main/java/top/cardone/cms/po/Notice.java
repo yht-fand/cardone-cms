@@ -102,13 +102,6 @@ public class Notice implements java.io.Serializable {
     protected String pictureUrl;
 
     /**
-     * 发布日期
-     */
-    @lombok.Getter
-    @lombok.Setter
-    protected Date releaseDate;
-
-    /**
      * 角色代码集合
      */
     @lombok.Getter
