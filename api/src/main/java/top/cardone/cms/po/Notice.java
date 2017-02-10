@@ -11,11 +11,25 @@ import java.util.Date;
 public class Notice implements java.io.Serializable {
 
     /**
+     * 作者代码
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String authorPersonCode;
+
+    /**
      * 开始时间
      */
     @lombok.Getter
     @lombok.Setter
     protected Date beginDate;
+
+    /**
+     * 审核人代码
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String checkPersonCode;
 
     /**
      * 正文
@@ -39,7 +53,7 @@ public class Notice implements java.io.Serializable {
     protected Date createdDate;
 
     /**
-     * 数据状态代码
+     * 数据状态代码(数据字典)
      */
     @lombok.Getter
     @lombok.Setter
@@ -53,11 +67,39 @@ public class Notice implements java.io.Serializable {
     protected String departmentCode;
 
     /**
+     * 部门代码集合
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String departmentCodes;
+
+    /**
      * 结束时间
      */
     @lombok.Getter
     @lombok.Setter
     protected Date endDate;
+
+    /**
+     * 标记代码(数据字典：工作流、同步、生成、录入、审批)
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String flagCode;
+
+    /**
+     * 标识对象代码(工作流：工作流标识、同步：批次号、生成：操作者编号、录入：操作者编号、审批：操作者编号)
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String flagObjectCode;
+
+    /**
+     * JSON数据
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String jsonData;
 
     /**
      * 最后修改人代码
@@ -81,6 +123,13 @@ public class Notice implements java.io.Serializable {
     protected String noticeId;
 
     /**
+     * 排序
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected Long order;
+
+    /**
      * 组织代码
      */
     @lombok.Getter
@@ -88,11 +137,11 @@ public class Notice implements java.io.Serializable {
     protected String orgCode;
 
     /**
-     * 许可代码集合
+     * 组织代码集合
      */
     @lombok.Getter
     @lombok.Setter
-    protected String permissionCodes;
+    protected String orgCodes;
 
     /**
      * 图片路径
@@ -102,13 +151,6 @@ public class Notice implements java.io.Serializable {
     protected String pictureUrl;
 
     /**
-     * 角色代码集合
-     */
-    @lombok.Getter
-    @lombok.Setter
-    protected String roleCodes;
-
-    /**
      * 站点代码
      */
     @lombok.Getter
@@ -116,7 +158,14 @@ public class Notice implements java.io.Serializable {
     protected String siteCode;
 
     /**
-     * 状态代码
+     * 来源代码
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String sourcesCode;
+
+    /**
+     * 状态代码(数据字典)
      */
     @lombok.Getter
     @lombok.Setter
@@ -137,7 +186,7 @@ public class Notice implements java.io.Serializable {
     protected String title;
 
     /**
-     * 类别代码
+     * 类别代码(数据字典)
      */
     @lombok.Getter
     @lombok.Setter
@@ -148,12 +197,5 @@ public class Notice implements java.io.Serializable {
      */
     @lombok.Getter
     @lombok.Setter
-    protected Long version;
-
-    /**
-     * 工作流标识
-     */
-    @lombok.Getter
-    @lombok.Setter
-    protected String wfId;
+    protected Integer version;
 }

@@ -3,8 +3,14 @@ SELECT
 <#case "articleId">
 ARTICLE_ID AS articleId
 <#break>
+<#case "authorPersonCode">
+AUTHOR_PERSON_CODE AS authorPersonCode
+<#break>
 <#case "beginDate">
 BEGIN_DATE AS beginDate
+<#break>
+<#case "checkPersonCode">
+CHECK_PERSON_CODE AS checkPersonCode
 <#break>
 <#case "content">
 CONTENT AS content
@@ -21,11 +27,23 @@ DATA_STATE_CODE AS dataStateCode
 <#case "departmentCode">
 DEPARTMENT_CODE AS departmentCode
 <#break>
+<#case "departmentCodes">
+DEPARTMENT_CODES AS departmentCodes
+<#break>
 <#case "endDate">
 END_DATE AS endDate
 <#break>
+<#case "flagCode">
+FLAG_CODE AS flagCode
+<#break>
+<#case "flagObjectCode">
+FLAG_OBJECT_CODE AS flagObjectCode
+<#break>
 <#case "intro">
 INTRO AS intro
+<#break>
+<#case "jsonData">
+JSON_DATA AS jsonData
 <#break>
 <#case "lastModifiedByCode">
 LAST_MODIFIED_BY_CODE AS lastModifiedByCode
@@ -33,11 +51,14 @@ LAST_MODIFIED_BY_CODE AS lastModifiedByCode
 <#case "lastModifiedDate">
 LAST_MODIFIED_DATE AS lastModifiedDate
 <#break>
+<#case "order">
+ORDER_ AS order
+<#break>
 <#case "orgCode">
 ORG_CODE AS orgCode
 <#break>
-<#case "permissionCodes">
-PERMISSION_CODES AS permissionCodes
+<#case "orgCodes">
+ORG_CODES AS orgCodes
 <#break>
 <#case "pictureUrl">
 PICTURE_URL AS pictureUrl
@@ -48,11 +69,11 @@ RECOM AS recom
 <#case "releaseDate">
 RELEASE_DATE AS releaseDate
 <#break>
-<#case "roleCodes">
-ROLE_CODES AS roleCodes
-<#break>
 <#case "siteCode">
 SITE_CODE AS siteCode
+<#break>
+<#case "sourcesCode">
+SOURCES_CODE AS sourcesCode
 <#break>
 <#case "stateCode">
 STATE_CODE AS stateCode
@@ -63,14 +84,8 @@ SYSTEM_INFO_CODE AS systemInfoCode
 <#case "title">
 TITLE AS title
 <#break>
-<#case "typeCode">
-TYPE_CODE AS typeCode
-<#break>
 <#case "version">
 VERSION_ AS version
-<#break>
-<#case "wfId">
-WF_ID AS wfId
 <#break>
 <#default>
 COUNT(1) AS COUNT_

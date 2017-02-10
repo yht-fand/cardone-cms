@@ -1,1 +1,1 @@
-DELETE FROM t_article WHERE INSTR(:ids, articleId) > 0
+DELETE FROM c1_article WHERE INSTR(:articleIds, ARTICLE_ID) > 0

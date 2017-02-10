@@ -1,4 +1,4 @@
 SELECT
-COUNT(1) AS COUNT_
-FROM c1_article
+COUNT(1)
+FROM c1_article t
 <#include "page.where.ftl">

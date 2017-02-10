@@ -1,1 +1,1 @@
-UPDATE t_notice SET END_DATE = NOW() WHERE INSTR(:ids, noticeId) > 0
+UPDATE c1_notice SET END_DATE = NOW(), DATA_STATE_CODE = '0' WHERE INSTR(:noticeIds, NOTICE_ID) > 0

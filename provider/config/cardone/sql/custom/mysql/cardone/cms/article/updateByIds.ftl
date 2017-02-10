@@ -1,1 +1,1 @@
-UPDATE t_article SET END_DATE = NOW() WHERE INSTR(:ids, articleId) > 0
+UPDATE c1_article SET END_DATE = NOW(), DATA_STATE_CODE = '0' WHERE INSTR(:articleIds, ARTICLE_ID) > 0

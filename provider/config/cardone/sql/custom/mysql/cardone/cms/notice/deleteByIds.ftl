@@ -1,1 +1,1 @@
-DELETE FROM t_notice WHERE INSTR(:ids, noticeId) > 0
+DELETE FROM c1_notice WHERE INSTR(:noticeIds, NOTICE_ID) > 0

@@ -3,31 +3,31 @@
     "permission_add": {
       "beanId": "authorityFunc",
       "params": {
-        "code": "cms.article.add"
+        "code": "cms:article:add"
       }
     },
     "permission_modify": {
       "beanId": "authorityFunc",
       "params": {
-        "code": "cms.article.modify"
+        "code": "cms:article:modify"
       }
     },
     "permission_delete": {
       "beanId": "authorityFunc",
       "params": {
-        "code": "cms.article.delete"
+        "code": "cms:article:delete"
       }
     },
     "permission_impData": {
       "beanId": "authorityFunc",
       "params": {
-        "code": "cms.article.impData"
+        "code": "cms:article:impData"
       }
     },
     "permission_expData": {
       "beanId": "authorityFunc",
       "params": {
-        "code": "cms.article.expData"
+        "code": "cms:article:expData"
       }
     }
   }
