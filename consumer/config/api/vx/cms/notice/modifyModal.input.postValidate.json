@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "noticeId": {
+      "required": true
+    }
+  },
+  "messages": {
+    "noticeId": {
+      "required": "公告标识不能为空值!"
+    }
+  }
+}

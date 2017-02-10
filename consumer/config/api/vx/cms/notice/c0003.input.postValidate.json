@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "noticeCode": {
+      "required": true
+    }
+  },
+  "messages": {
+    "noticeCode": {
+      "required": "公告编号不能为空值!"
+    }
+  }
+}

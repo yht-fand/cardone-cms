@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "articleCode": {
+      "required": true
+    }
+  },
+  "messages": {
+    "articleCode": {
+      "required": "文章编号不能为空值!"
+    }
+  }
+}

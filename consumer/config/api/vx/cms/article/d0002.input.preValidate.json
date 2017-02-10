@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "articleIds": {
+      "required": true
+    }
+  },
+  "messages": {
+    "articleIds": {
+      "required": "文章标识集合不能为空值!"
+    }
+  }
+}
