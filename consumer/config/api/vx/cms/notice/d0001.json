@@ -1,1 +1,17 @@
-{}
+{
+  "input": {
+    "noticeIds": "noticeIds"
+  },
+  "validation": {
+    "rules": {
+      "noticeIds": {
+        "required": true
+      }
+    },
+    "messages": {
+      "noticeIds": {
+        "required": "公告标识集合不能为空值!"
+      }
+    }
+  }
+}

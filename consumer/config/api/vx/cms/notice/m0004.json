@@ -1,1 +1,86 @@
-{}
+{
+  "input": {
+    "authorPersonCode": "authorPersonCode",
+    "beginDate": "beginDate",
+    "checkPersonCode": "checkPersonCode",
+    "content": "content",
+    "createdByCode": "createdByCode",
+    "createdDate": "createdDate",
+    "dataStateCode": "dataStateCode",
+    "departmentCode": "departmentCode",
+    "departmentCodes": "departmentCodes",
+    "endDate": "endDate",
+    "flagCode": "flagCode",
+    "flagObjectCode": "flagObjectCode",
+    "jsonData": "jsonData",
+    "lastModifiedByCode": "lastModifiedByCode",
+    "lastModifiedDate": "lastModifiedDate",
+    "noticeId": "noticeId",
+    "order": "order",
+    "orgCode": "orgCode",
+    "orgCodes": "orgCodes",
+    "pictureUrl": "pictureUrl",
+    "siteCode": "siteCode",
+    "sourcesCode": "sourcesCode",
+    "stateCode": "stateCode",
+    "systemInfoCode": "systemInfoCode",
+    "title": "title",
+    "typeCode": "typeCode",
+    "version": "version"
+  },
+  "validation": {
+    "rules": {
+      "noticeCode": {
+        "required": true,
+        "minlength": 4,
+        "maxlength": 255
+      },
+      "name": {
+        "required": true,
+        "minlength": 4,
+        "maxlength": 255
+      }
+    },
+    "messages": {
+      "noticeCode": {
+        "required": "必填",
+        "minlength": "需3个字符以上",
+        "maxlength": "需小于255个字符"
+      },
+      "name": {
+        "required": "名称不能为空值!",
+        "minlength": "需3个字符以上",
+        "maxlength": "需小于255个字符"
+      }
+    }
+  },
+  "output": {
+    "authorPersonCode": "author_person_code",
+    "beginDate": "begin_date",
+    "checkPersonCode": "check_person_code",
+    "content": "content",
+    "createdByCode": "created_by_code",
+    "createdDate": "created_date",
+    "dataStateCode": "data_state_code",
+    "departmentCode": "department_code",
+    "departmentCodes": "department_codes",
+    "endDate": "end_date",
+    "flagCode": "flag_code",
+    "flagObjectCode": "flag_object_code",
+    "jsonData": "json_data",
+    "lastModifiedByCode": "last_modified_by_code",
+    "lastModifiedDate": "last_modified_date",
+    "noticeId": "notice_id",
+    "order": "order_",
+    "orgCode": "org_code",
+    "orgCodes": "org_codes",
+    "pictureUrl": "picture_url",
+    "siteCode": "site_code",
+    "sourcesCode": "sources_code",
+    "stateCode": "state_code",
+    "systemInfoCode": "system_info_code",
+    "title": "title",
+    "typeCode": "type_code",
+    "version": "version_"
+  }
+}
