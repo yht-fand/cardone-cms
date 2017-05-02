@@ -25,6 +25,13 @@ public class Article implements java.io.Serializable {
     protected String authorPersonCode;
 
     /**
+     * 批次编号
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String batchNo;
+
+    /**
      * 开始时间
      */
     @lombok.Getter
@@ -134,7 +141,7 @@ public class Article implements java.io.Serializable {
      */
     @lombok.Getter
     @lombok.Setter
-    protected Long order;
+    protected Long orderBy;
 
     /**
      * 组织代码
@@ -149,6 +156,13 @@ public class Article implements java.io.Serializable {
     @lombok.Getter
     @lombok.Setter
     protected String orgCodes;
+
+    /**
+     * 个人代码
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String personalCode;
 
     /**
      * 图片路径

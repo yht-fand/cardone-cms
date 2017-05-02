@@ -1,6 +1,7 @@
 {
   "input": {
     "authorPersonCode": "authorPersonCode",
+    "batchNo": "batchNo",
     "beginDate": "beginDate",
     "checkPersonCode": "checkPersonCode",
     "content": "content",
@@ -16,9 +17,10 @@
     "lastModifiedByCode": "lastModifiedByCode",
     "lastModifiedDate": "lastModifiedDate",
     "noticeId": "noticeId",
-    "order": "order",
+    "orderBy": "orderBy",
     "orgCode": "orgCode",
     "orgCodes": "orgCodes",
+    "personalCode": "personalCode",
     "pictureUrl": "pictureUrl",
     "siteCode": "siteCode",
     "sourcesCode": "sourcesCode",

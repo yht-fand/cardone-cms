@@ -1,6 +1,7 @@
 {
   "input-temp:特殊情况再用": {
     "authorPersonCode": "authorPersonCode",
+    "batchNo": "batchNo",
     "beginDate": "beginDate",
     "checkPersonCode": "checkPersonCode",
     "content": "content",
@@ -16,9 +17,10 @@
     "lastModifiedByCode": "lastModifiedByCode",
     "lastModifiedDate": "lastModifiedDate",
     "noticeId": "noticeId",
-    "order": "order",
+    "orderBy": "orderBy",
     "orgCode": "orgCode",
     "orgCodes": "orgCodes",
+    "personalCode": "personalCode",
     "pictureUrl": "pictureUrl",
     "siteCode": "siteCode",
     "sourcesCode": "sourcesCode",
@@ -35,6 +37,7 @@
       "newArrayListFunc": {
         "output": {
           "authorPersonCode": "author_person_code",
+          "batchNo": "batch_no",
           "beginDate": "begin_date",
           "checkPersonCode": "check_person_code",
           "content": "content",
@@ -50,9 +53,10 @@
           "lastModifiedByCode": "last_modified_by_code",
           "lastModifiedDate": "last_modified_date",
           "noticeId": "notice_id",
-          "order": "order_",
+          "orderBy": "order_by_",
           "orgCode": "org_code",
           "orgCodes": "org_codes",
+          "personalCode": "personal_code",
           "pictureUrl": "picture_url",
           "siteCode": "site_code",
           "sourcesCode": "sources_code",

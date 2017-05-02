@@ -6,6 +6,9 @@ article_id AS articleId
 <#case "authorPersonCode">
 author_person_code AS authorPersonCode
 <#break>
+<#case "batchNo">
+batch_no AS batchNo
+<#break>
 <#case "beginDate">
 begin_date AS beginDate
 <#break>
@@ -51,14 +54,17 @@ last_modified_by_code AS lastModifiedByCode
 <#case "lastModifiedDate">
 last_modified_date AS lastModifiedDate
 <#break>
-<#case "order">
-order_ AS order
+<#case "orderBy">
+order_by_ AS orderBy
 <#break>
 <#case "orgCode">
 org_code AS orgCode
 <#break>
 <#case "orgCodes">
 org_codes AS orgCodes
+<#break>
+<#case "personalCode">
+personal_code AS personalCode
 <#break>
 <#case "pictureUrl">
 picture_url AS pictureUrl
@@ -88,7 +94,7 @@ title AS title
 version_ AS version
 <#break>
 <#default>
-COUNT(1) AS COUNT_
+COUNT(*) AS COUNT_
 </#switch>
 FROM c1_article
 <#include "where.ftl">

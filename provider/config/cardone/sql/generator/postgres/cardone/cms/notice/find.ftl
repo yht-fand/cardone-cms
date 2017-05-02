@@ -4,6 +4,10 @@ SELECT
 ${prefixName} author_person_code
 <#assign prefixName = ','>
 </#if>
+<#if (select_batchNo??)>
+${prefixName} batch_no
+<#assign prefixName = ','>
+</#if>
 <#if (select_beginDate??)>
 ${prefixName} begin_date
 <#assign prefixName = ','>
@@ -64,8 +68,8 @@ ${prefixName} last_modified_date
 ${prefixName} notice_id
 <#assign prefixName = ','>
 </#if>
-<#if (select_order??)>
-${prefixName} order_
+<#if (select_orderBy??)>
+${prefixName} order_by_
 <#assign prefixName = ','>
 </#if>
 <#if (select_orgCode??)>
@@ -74,6 +78,10 @@ ${prefixName} org_code
 </#if>
 <#if (select_orgCodes??)>
 ${prefixName} org_codes
+<#assign prefixName = ','>
+</#if>
+<#if (select_personalCode??)>
+${prefixName} personal_code
 <#assign prefixName = ','>
 </#if>
 <#if (select_pictureUrl??)>
@@ -116,6 +124,10 @@ FROM c1_notice
 <#assign prefixName = 'ORDER BY'>
 <#if (order_by_authorPersonCode??)>
 ${prefixName} author_person_code ${order_by_authorPersonCode_value!}
+<#assign prefixName = ','>
+</#if>
+<#if (order_by_batchNo??)>
+${prefixName} batch_no ${order_by_batchNo_value!}
 <#assign prefixName = ','>
 </#if>
 <#if (order_by_beginDate??)>
@@ -178,8 +190,8 @@ ${prefixName} last_modified_date ${order_by_lastModifiedDate_value!}
 ${prefixName} notice_id ${order_by_noticeId_value!}
 <#assign prefixName = ','>
 </#if>
-<#if (order_by_order??)>
-${prefixName} order_ ${order_by_order_value!}
+<#if (order_by_orderBy??)>
+${prefixName} order_by_ ${order_by_orderBy_value!}
 <#assign prefixName = ','>
 </#if>
 <#if (order_by_orgCode??)>
@@ -188,6 +200,10 @@ ${prefixName} org_code ${order_by_orgCode_value!}
 </#if>
 <#if (order_by_orgCodes??)>
 ${prefixName} org_codes ${order_by_orgCodes_value!}
+<#assign prefixName = ','>
+</#if>
+<#if (order_by_personalCode??)>
+${prefixName} personal_code ${order_by_personalCode_value!}
 <#assign prefixName = ','>
 </#if>
 <#if (order_by_pictureUrl??)>
