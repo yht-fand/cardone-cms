@@ -28,7 +28,7 @@ INTRO|YES|String(65535)|简介
 JSON_DATA|YES|String()|JSON数据
 LAST_MODIFIED_BY_CODE|YES|String(255)|最后修改人代码
 LAST_MODIFIED_DATE|YES|Date(19)|最后修改时间
-ORDER_|YES|Long(19)|排序
+ORDER_BY_|YES|Long(19)|排序
 ORG_CODE|YES|String(255)|组织代码
 ORG_CODES|YES|String(1023)|组织代码集合
 PICTURE_URL|YES|String(255)|图片路径
@@ -61,7 +61,7 @@ JSON_DATA|YES|String()|JSON数据
 LAST_MODIFIED_BY_CODE|YES|String(255)|最后修改人代码
 LAST_MODIFIED_DATE|YES|Date(19)|最后修改时间
 NOTICE_ID|NO|String(255)|公告标识
-ORDER_|YES|Long(19)|排序
+ORDER_BY_|YES|Long(19)|排序
 ORG_CODE|YES|String(255)|组织代码
 ORG_CODES|YES|String(1023)|组织代码集合
 PICTURE_URL|YES|String(255)|图片路径

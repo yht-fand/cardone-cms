@@ -65,7 +65,7 @@ ${prefixName} `NOTICE_ID` = :update_noticeId_value
 <#assign prefixName = ','>
 </#if>
 <#if (update_order??)>
-${prefixName} `ORDER_` = :update_order_value
+${prefixName} `ORDER_BY_` = :update_order_by_value
 <#assign prefixName = ','>
 </#if>
 <#if (update_orgCode??)>
