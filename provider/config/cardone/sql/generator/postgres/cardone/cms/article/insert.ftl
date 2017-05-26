@@ -2,127 +2,127 @@ INSERT
 INTO c1_article
 (<#assign prefixName = ' '>
 <#if (insert_articleId??) && (insert_articleId_value??)>
-${prefixName} article_id
+${prefixName} "article_id"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_authorPersonCode??) && (insert_authorPersonCode_value??)>
-${prefixName} author_person_code
+${prefixName} "author_person_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_batchNo??) && (insert_batchNo_value??)>
-${prefixName} batch_no
+${prefixName} "batch_no"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_beginDate??) && (insert_beginDate_value??)>
-${prefixName} begin_date
+${prefixName} "begin_date"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_checkPersonCode??) && (insert_checkPersonCode_value??)>
-${prefixName} check_person_code
+${prefixName} "check_person_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_content??) && (insert_content_value??)>
-${prefixName} content
+${prefixName} "content"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_createdByCode??) && (insert_createdByCode_value??)>
-${prefixName} created_by_code
+${prefixName} "created_by_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_createdDate??) && (insert_createdDate_value??)>
-${prefixName} created_date
+${prefixName} "created_date"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_dataStateCode??) && (insert_dataStateCode_value??)>
-${prefixName} data_state_code
+${prefixName} "data_state_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_departmentCode??) && (insert_departmentCode_value??)>
-${prefixName} department_code
+${prefixName} "department_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_departmentCodes??) && (insert_departmentCodes_value??)>
-${prefixName} department_codes
+${prefixName} "department_codes"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_endDate??) && (insert_endDate_value??)>
-${prefixName} end_date
+${prefixName} "end_date"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_flagCode??) && (insert_flagCode_value??)>
-${prefixName} flag_code
+${prefixName} "flag_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_flagObjectCode??) && (insert_flagObjectCode_value??)>
-${prefixName} flag_object_code
+${prefixName} "flag_object_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_intro??) && (insert_intro_value??)>
-${prefixName} intro
+${prefixName} "intro"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_jsonData??) && (insert_jsonData_value??)>
-${prefixName} json_data
+${prefixName} "json_data"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_lastModifiedByCode??) && (insert_lastModifiedByCode_value??)>
-${prefixName} last_modified_by_code
+${prefixName} "last_modified_by_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_lastModifiedDate??) && (insert_lastModifiedDate_value??)>
-${prefixName} last_modified_date
+${prefixName} "last_modified_date"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_orderBy??) && (insert_orderBy_value??)>
-${prefixName} order_by_
+${prefixName} "order_by_"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_orgCode??) && (insert_orgCode_value??)>
-${prefixName} org_code
+${prefixName} "org_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_orgCodes??) && (insert_orgCodes_value??)>
-${prefixName} org_codes
+${prefixName} "org_codes"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_personalCode??) && (insert_personalCode_value??)>
-${prefixName} personal_code
+${prefixName} "personal_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_pictureUrl??) && (insert_pictureUrl_value??)>
-${prefixName} picture_url
+${prefixName} "picture_url"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_recom??) && (insert_recom_value??)>
-${prefixName} recom
+${prefixName} "recom"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_releaseDate??) && (insert_releaseDate_value??)>
-${prefixName} release_date
+${prefixName} "release_date"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_siteCode??) && (insert_siteCode_value??)>
-${prefixName} site_code
+${prefixName} "site_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_sourcesCode??) && (insert_sourcesCode_value??)>
-${prefixName} sources_code
+${prefixName} "sources_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_stateCode??) && (insert_stateCode_value??)>
-${prefixName} state_code
+${prefixName} "state_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_systemInfoCode??) && (insert_systemInfoCode_value??)>
-${prefixName} system_info_code
+${prefixName} "system_info_code"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_title??) && (insert_title_value??)>
-${prefixName} title
+${prefixName} "title"
 <#assign prefixName = ','>
 </#if>
 <#if (insert_version??) && (insert_version_value??)>
-${prefixName} version_
+${prefixName} "version_"
 <#assign prefixName = ','>
 </#if>
 )
