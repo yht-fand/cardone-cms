@@ -10,7 +10,10 @@
     },
     "messages": {
       "articleIds": {
-        "required": "文章标识集合不能为空值!"
+        "required": {
+          "code": "articleIds required",
+          "defaultMessage": "文章标识集合必填"
+        }
       }
     }
   }

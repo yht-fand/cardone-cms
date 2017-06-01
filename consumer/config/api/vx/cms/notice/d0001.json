@@ -10,7 +10,10 @@
     },
     "messages": {
       "noticeIds": {
-        "required": "公告标识集合不能为空值!"
+        "required": {
+          "code": "noticeIds required",
+          "defaultMessage": "公告标识集合必填"
+        }
       }
     }
   }
