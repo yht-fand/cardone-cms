@@ -10,10 +10,7 @@
     },
     "messages": {
       "noticeId": {
-        "required": {
-          "code": "noticeId required",
-          "defaultMessage": "公告标识必填"
-        }
+        "required": "公告标识必填"
       }
     }
   },

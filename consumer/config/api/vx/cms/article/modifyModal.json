@@ -10,10 +10,7 @@
     },
     "messages": {
       "articleId": {
-        "required": {
-          "code": "articleId required",
-          "defaultMessage": "文章标识必填"
-        }
+        "required": "文章标识必填"
       }
     }
   },

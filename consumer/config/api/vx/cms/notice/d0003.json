@@ -1,6 +1,13 @@
 {
   "input": {
-    "noticeIds": "noticeIds"
+    "noticeIds": {
+      "stringToListFunc": {
+        "idName": "noticeId",
+        "map": {
+          "dataStateCode": "0"
+        }
+      }
+    }
   },
   "validation": {
     "rules": {
@@ -10,10 +17,7 @@
     },
     "messages": {
       "noticeIds": {
-        "required": {
-          "code": "noticeIds required",
-          "defaultMessage": "公告标识集合必填"
-        }
+        "required": "公告标识集合必填"
       }
     }
   }

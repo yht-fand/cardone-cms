@@ -1,6 +1,13 @@
 {
   "input": {
-    "articleIds": "articleIds"
+    "articleIds": {
+      "stringToListFunc": {
+        "idName": "articleId",
+        "map": {
+          "dataStateCode": "0"
+        }
+      }
+    }
   },
   "validation": {
     "rules": {
@@ -10,10 +17,7 @@
     },
     "messages": {
       "articleIds": {
-        "required": {
-          "code": "articleIds required",
-          "defaultMessage": "文章标识集合必填"
-        }
+        "required": "文章标识集合必填"
       }
     }
   }

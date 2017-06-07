@@ -45,24 +45,12 @@
     },
     "messages": {
       "articleId": {
-        "required": {
-          "code": "articleId required",
-          "defaultMessage": "文章标识必填",
-        }
+        "required": "文章标识必填"
       },
       "name": {
-        "required": {
-          "code": "name required",
-          "defaultMessage": "文章名称必填",
-        },
-        "minlength": {
-          "code": "name minlength",
-          "defaultMessage": "文章名称需{0}个字符以上",
-        },
-        "maxlength": {
-          "code": "name maxlength",
-          "defaultMessage": "文章名称需小于{0}个字符"
-        }
+        "required": "文章名称必填",
+        "minlength": "文章名称需{0}个字符以上",
+        "maxlength": "文章名称需小于{0}个字符"
       }
     }
   }

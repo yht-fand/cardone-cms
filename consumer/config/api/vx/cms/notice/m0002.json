@@ -45,32 +45,14 @@
     },
     "messages": {
       "noticeCode": {
-        "required": {
-          "code": "noticeCode required",
-          "defaultMessage": "公告编号必填"
-        },
-        "minlength": {
-          "code": "noticeCode minlength",
-          "defaultMessage": "公告编号需{0}个字符以上"
-        },
-        "maxlength": {
-          "code": "noticeCode maxlength",
-          "defaultMessage": "公告编号需小于{0}个字符"
-        }
+        "required": "公告编号必填",
+        "minlength": "公告编号需{0}个字符以上",
+        "maxlength": "公告编号需小于{0}个字符"
       },
       "name": {
-        "required": {
-          "code": "name required",
-          "defaultMessage": "公告名称必填"
-        },
-        "minlength": {
-          "code": "name minlength",
-          "defaultMessage": "公告名称需{0}个字符以上"
-        },
-        "maxlength": {
-          "code": "name maxlength",
-          "defaultMessage": "公告名称需小于{0}个字符"
-        }
+        "required": "公告名称必填",
+        "minlength": "公告名称需{0}个字符以上",
+        "maxlength": "公告名称需小于{0}个字符"
       }
     }
   },
