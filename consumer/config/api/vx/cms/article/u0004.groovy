@@ -75,6 +75,6 @@ class u0004 {
     }
 
     def output(output) {
-		['data': output]        
+		['updateCount': output]
     }
 }
