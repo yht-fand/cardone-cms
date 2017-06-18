@@ -12,7 +12,7 @@
                     <map>
                         <entry key="sqlFileRoot" value="/cardone/cms/notice/"/>
                         <entry key="pks" value="noticeId"/>
-                        <entry key="codes" value="noticeId"/>
+                        <entry key="codes" value="noticeId,endDate"/>
                     </map>
                 </entry>
                 <entry key="insert">
@@ -20,6 +20,8 @@
                         <entry key="noticeId" value="readRandomUUIDFunc"/>
                         <entry key="createdByCode" value="readCreatedByCodeFunc"/>
                         <entry key="createdDate" value="readCreatedDateFunc"/>
+                        <entry key="beginDate" value="readOneDateFunc"/>
+                        <entry key="endDate" value="endDateDefaultValueFunc"/>
                     </map>
                 </entry>
                 <entry key="update">
