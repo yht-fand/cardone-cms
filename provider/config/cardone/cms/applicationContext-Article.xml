@@ -12,7 +12,7 @@
                     <map>
                         <entry key="sqlFileRoot" value="/cardone/cms/article/"/>
                         <entry key="pks" value="articleId"/>
-                        <entry key="codes" value="articleId,endDate"/>
+                        <entry key="codes" value="systemInfoCode,siteCode,title,endDate"/>
                     </map>
                 </entry>
                 <entry key="insert">
@@ -22,6 +22,8 @@
                         <entry key="createdDate" value="readCreatedDateFunc"/>
                         <entry key="beginDate" value="readOneDateFunc"/>
                         <entry key="endDate" value="endDateDefaultValueFunc"/>
+                        <entry key="systemInfoCode" value="systemInfoCodeDefaultValueFunc"/>
+                        <entry key="siteCode" value="siteCodeDefaultValueFunc"/>
                     </map>
                 </entry>
                 <entry key="update">
