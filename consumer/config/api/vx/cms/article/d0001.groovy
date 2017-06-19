@@ -1,4 +1,4 @@
-package api.vx.cms.article
+package top.cardone.api.vx.cms.article
 
 import org.apache.commons.lang3.StringUtils
 import top.cardone.cms.service.ArticleService
@@ -26,10 +26,10 @@ class d0001 implements java.io.Serializable {
     }
 
     def func(input) {
-        ['deleteCounts': ApplicationContextHolder.getBean(ArticleService.class).updateListCache(input?.articleIds)]
+        ApplicationContextHolder.getBean(ArticleService.class).updateListCache(input?.articleIds)
     }
 
     def output(output) {
-        output
+        ['deleteCounts': output]
     }
 }

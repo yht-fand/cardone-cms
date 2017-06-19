@@ -1,4 +1,4 @@
-package api.vx.cms.article
+package top.cardone.api.vx.cms.article
 
 import top.cardone.configuration.service.DictionaryService
 import top.cardone.context.ApplicationContextHolder

@@ -1,4 +1,4 @@
-package api.vx.cms.notice
+package top.cardone.api.vx.cms.notice
 
 import top.cardone.configuration.service.DictionaryService
 import top.cardone.context.ApplicationContextHolder

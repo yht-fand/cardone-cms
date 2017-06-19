@@ -1,4 +1,4 @@
-package api.vx.cms.article
+package top.cardone.api.vx.cms.article
 
 import org.apache.commons.lang3.StringUtils
 import top.cardone.cms.service.ArticleService
@@ -21,7 +21,7 @@ class r0002 implements java.io.Serializable {
         def newOutput = []
 		
         for (def outputItem : output) {
-			newOutput.add(['label': outputItem['name'], 'value': outputItem['article_code']])
+			newOutput.add(['label': outputItem['name'], 'value': outputItem['c1_article_code']])
         }
 
         newOutput

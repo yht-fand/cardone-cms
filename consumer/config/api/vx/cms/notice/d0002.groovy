@@ -1,4 +1,4 @@
-package api.vx.cms.notice
+package top.cardone.api.vx.cms.notice
 
 import org.apache.commons.lang3.StringUtils
 import top.cardone.cms.service.NoticeService
@@ -26,10 +26,10 @@ class d0001 implements java.io.Serializable {
     }
 
     def func(input) {
-        ['deleteCounts': ApplicationContextHolder.getBean(NoticeService.class).deleteListCache(input?.noticeIds)]
+        ApplicationContextHolder.getBean(NoticeService.class).updateListCache(input?.noticeIds)
     }
 
     def output(output) {
-        output
+        ['deleteCounts': output]
     }
 }

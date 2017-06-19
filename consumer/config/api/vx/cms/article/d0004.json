@@ -1,14 +1,4 @@
 {
-  "input": {
-    "articleIds": {
-      "stringToListFunc": {
-        "idName": "articleId",
-        "map": {
-          "dataStateCode": "0"
-        }
-      }
-    }
-  },
   "validation": {
     "rules": {
       "articleIds": {

@@ -1,4 +1,4 @@
-package api.vx.cms.notice
+package top.cardone.api.vx.cms.notice
 
 import org.apache.commons.lang3.StringUtils
 import top.cardone.cms.service.NoticeService

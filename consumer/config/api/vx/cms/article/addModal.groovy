@@ -1,4 +1,4 @@
-package api.vx.cms.article
+package top.cardone.api.vx.cms.article
 
 import org.apache.commons.lang3.StringUtils
 import top.cardone.cms.service.ArticleService

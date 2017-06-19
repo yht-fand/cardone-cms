@@ -1,7 +1,4 @@
 {
-  "input": {
-    "noticeId": "noticeId"
-  },
   "validation": {
     "rules": {
       "noticeId": {
@@ -13,36 +10,5 @@
         "required": "公告标识必填"
       }
     }
-  },
-  "output": {
-    "authorPersonCode": "author_person_code",
-    "batchNo": "batch_no",
-    "beginDate": "begin_date",
-    "checkPersonCode": "check_person_code",
-    "content": "content",
-    "createdByCode": "created_by_code",
-    "createdDate": "created_date",
-    "dataStateCode": "data_state_code",
-    "departmentCode": "department_code",
-    "departmentCodes": "department_codes",
-    "endDate": "end_date",
-    "flagCode": "flag_code",
-    "flagObjectCode": "flag_object_code",
-    "jsonData": "json_data",
-    "lastModifiedByCode": "last_modified_by_code",
-    "lastModifiedDate": "last_modified_date",
-    "noticeId": "notice_id",
-    "orderBy": "order_by_",
-    "orgCode": "org_code",
-    "orgCodes": "org_codes",
-    "personalCode": "personal_code",
-    "pictureUrl": "picture_url",
-    "siteCode": "site_code",
-    "sourcesCode": "sources_code",
-    "stateCode": "state_code",
-    "systemInfoCode": "system_info_code",
-    "title": "title",
-    "typeCode": "type_code",
-    "version": "version_"
   }
 }

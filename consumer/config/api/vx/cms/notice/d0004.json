@@ -1,14 +1,4 @@
 {
-  "input": {
-    "noticeIds": {
-      "stringToListFunc": {
-        "idName": "noticeId",
-        "map": {
-          "dataStateCode": "0"
-        }
-      }
-    }
-  },
   "validation": {
     "rules": {
       "noticeIds": {

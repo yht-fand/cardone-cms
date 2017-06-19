@@ -1,4 +1,4 @@
-package api.vx.cms.article
+package top.cardone.api.vx.cms.article
 
 import org.apache.commons.lang3.StringUtils
 import top.cardone.cms.service.ArticleService
@@ -9,37 +9,39 @@ class c0004 implements java.io.Serializable {
     def input(input) {
         def newInput = [:]
 
-		newInput['articleId'] = input['articleId']
-		newInput['authorPersonCode'] = input['authorPersonCode']
-		newInput['batchNo'] = input['batchNo']
-		newInput['beginDate'] = input['beginDate']
-		newInput['checkPersonCode'] = input['checkPersonCode']
-		newInput['content'] = input['content']
-		newInput['createdByCode'] = input['createdByCode']
-		newInput['createdDate'] = input['createdDate']
-		newInput['dataStateCode'] = input['dataStateCode']
-		newInput['departmentCode'] = input['departmentCode']
-		newInput['departmentCodes'] = input['departmentCodes']
-		newInput['endDate'] = input['endDate']
-		newInput['flagCode'] = input['flagCode']
-		newInput['flagObjectCode'] = input['flagObjectCode']
-		newInput['intro'] = input['intro']
-		newInput['jsonData'] = input['jsonData']
-		newInput['lastModifiedByCode'] = input['lastModifiedByCode']
-		newInput['lastModifiedDate'] = input['lastModifiedDate']
-		newInput['orderBy'] = input['orderBy']
-		newInput['orgCode'] = input['orgCode']
-		newInput['orgCodes'] = input['orgCodes']
-		newInput['personalCode'] = input['personalCode']
-		newInput['pictureUrl'] = input['pictureUrl']
-		newInput['recom'] = input['recom']
-		newInput['releaseDate'] = input['releaseDate']
-		newInput['siteCode'] = input['siteCode']
-		newInput['sourcesCode'] = input['sourcesCode']
-		newInput['stateCode'] = input['stateCode']
-		newInput['systemInfoCode'] = input['systemInfoCode']
-		newInput['title'] = input['title']
-		newInput['version'] = input['version']
+		newInput?.articleId = input?.articleId
+		newInput?.authorPersonCode = input?.authorPersonCode
+		newInput?.batchNo = input?.batchNo
+		newInput?.beginDate = input?.beginDate
+		newInput?.checkPersonCode = input?.checkPersonCode
+		newInput?.content = input?.content
+		newInput?.createdByCode = input?.createdByCode
+		newInput?.createdDate = input?.createdDate
+		newInput?.dataStateCode = input?.dataStateCode
+		newInput?.departmentCode = input?.departmentCode
+		newInput?.departmentCodes = input?.departmentCodes
+		newInput?.endDate = input?.endDate
+		newInput?.flagCode = input?.flagCode
+		newInput?.flagObjectCode = input?.flagObjectCode
+		newInput?.intro = input?.intro
+		newInput?.jsonData = input?.jsonData
+		newInput?.lastModifiedByCode = input?.lastModifiedByCode
+		newInput?.lastModifiedDate = input?.lastModifiedDate
+		newInput?.orderBy = input?.orderBy
+		newInput?.orgCode = input?.orgCode
+		newInput?.orgCodes = input?.orgCodes
+		newInput?.personalCode = input?.personalCode
+		newInput?.pictureUrl = input?.pictureUrl
+		newInput?.recom = input?.recom
+		newInput?.releaseDate = input?.releaseDate
+		newInput?.siteCode = input?.siteCode
+		newInput?.sourcesCode = input?.sourcesCode
+		newInput?.stateCode = input?.stateCode
+		newInput?.systemInfoCode = input?.systemInfoCode
+		newInput?.title = input?.title
+		newInput?.version = input?.version
+
+        newInput.flagCode = StringUtils.defaultIfBlank(input.flagCode, "input")
 
         newInput
     }
@@ -69,7 +71,7 @@ class c0004 implements java.io.Serializable {
 //          throw new CodeException("name maxlength", "文章名称需小于{0}个字符", 255)
 //      }
 		
-		def readOne = ['articleCode': input.articleCode]
+		def readOne = ['articleCode': input.articleCode, "dataStateCode": "1"]
 
 		def count = ApplicationContextHolder.getBean(ArticleService.class).readOne(Integer.class, readOne)
 
@@ -83,6 +85,6 @@ class c0004 implements java.io.Serializable {
     }
 
     def output(output) {
-		['insertCount': output]
+		['insertCount': output]        
     }
 }
