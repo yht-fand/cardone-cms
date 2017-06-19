@@ -124,6 +124,7 @@ ${prefixName?string('  ', ', ')}"title"
 ${prefixName?string('  ', ', ')}"version_"
 <#assign prefixName = false>
 </#if>
+<#if prefixName>
 *
 </#if>
 FROM c1_article
