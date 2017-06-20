@@ -116,7 +116,7 @@ public class Article implements java.io.Serializable {
     protected String intro;
 
     /**
-     * JSON数据
+     * json数据
      */
     @lombok.Getter
     @lombok.Setter
