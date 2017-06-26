@@ -1,1 +1,0 @@
-DELETE FROM c1_notice WHERE INSTR(:noticeIds, NOTICE_ID) > 0
