@@ -127,7 +127,7 @@ public interface NoticeService extends PageService {
      * @see top.cardone.cms.service.NoticeService#save
      */
     @CacheEvict(value = "top.cardone.cms.service.NoticeService", allEntries = true)
-    Integer saveCache(Object save);
+    int saveCache(Object save);
 
 	/**
      * @see top.cardone.cms.service.NoticeService#update

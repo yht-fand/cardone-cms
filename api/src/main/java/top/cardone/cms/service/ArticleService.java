@@ -127,7 +127,7 @@ public interface ArticleService extends PageService {
      * @see top.cardone.cms.service.ArticleService#save
      */
     @CacheEvict(value = "top.cardone.cms.service.ArticleService", allEntries = true)
-    Integer saveCache(Object save);
+    int saveCache(Object save);
 
 	/**
      * @see top.cardone.cms.service.ArticleService#update
