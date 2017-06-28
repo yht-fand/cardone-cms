@@ -63,9 +63,9 @@ class u0002 implements java.io.Serializable {
 
 		def readOne = ["noticeCode": input.noticeCode, "object_id": "noticeId", "dataStateCode": "1"]
 
-		String dbNoticeId = ApplicationContextHolder.getBean(NoticeService.class).readOne(String.class, readOne)
+		def dbNoticeId = ApplicationContextHolder.getBean(NoticeService.class).readOne(String.class, readOne)
 
-		if ((dbNoticeId != null) && !StringUtils.equals(dbNoticeId, input.noticeId)) {
+		if (!StringUtils.equals(dbNoticeId, input.noticeId)) {
 			throw new CodeException("noticeId already exists", "公告编号已经存在")
 		}
     }
