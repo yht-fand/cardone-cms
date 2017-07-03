@@ -18,20 +18,23 @@
                 <entry key="insert">
                     <map>
                         <entry key="noticeId" value="readRandomUUIDFunc"/>
-                        <entry key="createdByCode" value="readCreatedByCodeFunc"/>
-                        <entry key="createdDate" value="readCreatedDateFunc"/>
+                        <entry key="createdByCode" value="readPrincipalFunc"/>
+                        <entry key="createdDate" value="readOneDateFunc"/>
                         <entry key="beginDate" value="readOneDateFunc"/>
                         <entry key="endDate" value="endDateDefaultValueFunc"/>
                         <entry key="systemInfoCode" value="systemInfoCodeDefaultValueFunc"/>
                         <entry key="siteCode" value="siteCodeDefaultValueFunc"/>
+                        <entry key="beginDate" value="readOneDateFunc"/>
+                        <entry key="endDate" value="endDateDefaultValueFunc"/>
                     </map>
                 </entry>
                 <entry key="update">
                     <map>
-                        <entry key="lastModifiedByCode" value="readLastModifiedByCodeFunc"/>
-                        <entry key="lastModifiedDate" value="readLastModifiedDateFunc"/>
+                        <entry key="lastModifiedByCode" value="readPrincipalFunc"/>
+                       <entry key="lastModifiedDate" value="readOneDateFunc"/>
                         <entry key="systemInfoCode" value="systemInfoCodeDefaultValueFunc"/>
                         <entry key="siteCode" value="siteCodeDefaultValueFunc"/>
+                        <entry key="endDate" value="endDateDefaultValueFunc"/>
                     </map>
                 </entry>
             </map>
