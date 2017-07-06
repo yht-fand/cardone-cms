@@ -13,8 +13,8 @@ public interface NoticeDao extends PageDao {
     /**
      * 查询公告对象
      *
-     * @param noticeId 公告标识
+     * @param findOne 公告标识
      * @return 公告对象
      */
-    Map<String, Object> findOneByNoticeId(Object noticeId);
+    Map<String, Object> findOneByNoticeId(Map<String, Object> findOne);
 }

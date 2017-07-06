@@ -12,13 +12,9 @@ import java.util.Map;
  */
 public class ArticleDaoImpl extends PageDaoImpl implements top.cardone.cms.dao.ArticleDao {
     @Override
-    public Map<String, Object> findOneByArticleId(Object articleId) {
-        Map<String, Object> inputMap = Maps.newHashMap();
-		
-        inputMap.put("articleId", articleId);
-		
+    public Map<String, Object> findOneByArticleId(Map<String, Object> findOne) {
         String findOneSqlFilePath = this.getSqlFilePath("page.find");
 		
-        return this.findOne(findOneSqlFilePath, inputMap);
+        return this.findOne(findOneSqlFilePath, findOne);
     }
 }

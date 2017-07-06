@@ -13,8 +13,8 @@ public interface ArticleDao extends PageDao {
     /**
      * 查询文章对象
      *
-     * @param articleId 文章标识
+     * @param findOne 文章标识
      * @return 文章对象
      */
-    Map<String, Object> findOneByArticleId(Object articleId);
+    Map<String, Object> findOneByArticleId(Map<String, Object> findOne);
 }
