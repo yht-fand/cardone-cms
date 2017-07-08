@@ -13,7 +13,7 @@
     <groupId>top.cardone</groupId>
     <artifactId>cardone-cms-parent</artifactId>
     <version>1.1.1-SNAPSHOT</version>
-    <name>${project.artifactId}</name>
+    <name>top.cardone cardone-cms-parent</name>
     <description>top.cardone cardone-cms-parent</description>
     <packaging>pom</packaging>
 
@@ -66,18 +66,6 @@
             <dependency>
                 <groupId>top.cardone</groupId>
 				<artifactId>cardone-cms-implements-default</artifactId>
-                <version>1.1.1-SNAPSHOT</version>
-            </dependency>
-
-            <dependency>
-                <groupId>top.cardone</groupId>
-				<artifactId>cardone-cms-provider</artifactId>
-                <version>1.1.1-SNAPSHOT</version>
-            </dependency>
-
-            <dependency>
-                <groupId>top.cardone</groupId>
-				<artifactId>cardone-cms-consumer</artifactId>
                 <version>1.1.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
