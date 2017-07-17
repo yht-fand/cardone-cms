@@ -22,8 +22,8 @@ import java.util.Map;
  */
 @Transactional(readOnly = true)
 @CacheConfig(cacheNames = {"top.cardone.cms.service.ArticleService"})
-@Events({@Event(applicationEvent = SimpleErrorEvent.class, configs = {"insertOperateLogAction"}),
-        @Event(applicationEvent = SimpleEvent.class, configs = {"insertOperateLogAction"})})
+@Events({@Event(applicationEvent = SimpleErrorEvent.class),
+        @Event(applicationEvent = SimpleEvent.class)})
 public interface ArticleService extends PageService {
     /**
      * @see top.cardone.cms.service.ArticleService#page
