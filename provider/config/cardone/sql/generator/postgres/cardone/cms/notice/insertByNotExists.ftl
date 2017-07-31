@@ -6,6 +6,10 @@ c1_notice
 ${prefixName?string('  ', ', ')}"author_person_code"
 <#assign prefixName = false>
 </#if>
+<#if (insert_authorPersonId??) && (insert_authorPersonId_value??)>
+${prefixName?string('  ', ', ')}"author_person_id"
+<#assign prefixName = false>
+</#if>
 <#if (insert_batchNo??) && (insert_batchNo_value??)>
 ${prefixName?string('  ', ', ')}"batch_no"
 <#assign prefixName = false>
@@ -18,12 +22,20 @@ ${prefixName?string('  ', ', ')}"begin_date"
 ${prefixName?string('  ', ', ')}"check_person_code"
 <#assign prefixName = false>
 </#if>
+<#if (insert_checkPersonId??) && (insert_checkPersonId_value??)>
+${prefixName?string('  ', ', ')}"check_person_id"
+<#assign prefixName = false>
+</#if>
 <#if (insert_content??) && (insert_content_value??)>
 ${prefixName?string('  ', ', ')}"content"
 <#assign prefixName = false>
 </#if>
 <#if (insert_createdByCode??) && (insert_createdByCode_value??)>
 ${prefixName?string('  ', ', ')}"created_by_code"
+<#assign prefixName = false>
+</#if>
+<#if (insert_createdById??) && (insert_createdById_value??)>
+${prefixName?string('  ', ', ')}"created_by_id"
 <#assign prefixName = false>
 </#if>
 <#if (insert_createdDate??) && (insert_createdDate_value??)>
@@ -40,6 +52,10 @@ ${prefixName?string('  ', ', ')}"department_code"
 </#if>
 <#if (insert_departmentCodes??) && (insert_departmentCodes_value??)>
 ${prefixName?string('  ', ', ')}"department_codes"
+<#assign prefixName = false>
+</#if>
+<#if (insert_departmentIds??) && (insert_departmentIds_value??)>
+${prefixName?string('  ', ', ')}"department_ids"
 <#assign prefixName = false>
 </#if>
 <#if (insert_endDate??) && (insert_endDate_value??)>
@@ -62,6 +78,10 @@ ${prefixName?string('  ', ', ')}"json_data"
 ${prefixName?string('  ', ', ')}"last_modified_by_code"
 <#assign prefixName = false>
 </#if>
+<#if (insert_lastModifiedById??) && (insert_lastModifiedById_value??)>
+${prefixName?string('  ', ', ')}"last_modified_by_id"
+<#assign prefixName = false>
+</#if>
 <#if (insert_lastModifiedDate??) && (insert_lastModifiedDate_value??)>
 ${prefixName?string('  ', ', ')}"last_modified_date"
 <#assign prefixName = false>
@@ -82,8 +102,16 @@ ${prefixName?string('  ', ', ')}"org_code"
 ${prefixName?string('  ', ', ')}"org_codes"
 <#assign prefixName = false>
 </#if>
+<#if (insert_orgIds??) && (insert_orgIds_value??)>
+${prefixName?string('  ', ', ')}"org_ids"
+<#assign prefixName = false>
+</#if>
 <#if (insert_personalCode??) && (insert_personalCode_value??)>
 ${prefixName?string('  ', ', ')}"personal_code"
+<#assign prefixName = false>
+</#if>
+<#if (insert_personalId??) && (insert_personalId_value??)>
+${prefixName?string('  ', ', ')}"personal_id"
 <#assign prefixName = false>
 </#if>
 <#if (insert_pictureUrl??) && (insert_pictureUrl_value??)>
@@ -125,6 +153,10 @@ ${prefixName?string('  ', ', ')}"version_"
 ${prefixName?string('  ', ', ')}:insert_authorPersonCode_value
 <#assign prefixName = false>
 </#if>
+<#if (insert_authorPersonId??) && (insert_authorPersonId_value??)>
+${prefixName?string('  ', ', ')}:insert_authorPersonId_value
+<#assign prefixName = false>
+</#if>
 <#if (insert_batchNo??) && (insert_batchNo_value??)>
 ${prefixName?string('  ', ', ')}:insert_batchNo_value
 <#assign prefixName = false>
@@ -137,12 +169,20 @@ ${prefixName?string('  ', ', ')}:insert_beginDate_value
 ${prefixName?string('  ', ', ')}:insert_checkPersonCode_value
 <#assign prefixName = false>
 </#if>
+<#if (insert_checkPersonId??) && (insert_checkPersonId_value??)>
+${prefixName?string('  ', ', ')}:insert_checkPersonId_value
+<#assign prefixName = false>
+</#if>
 <#if (insert_content??) && (insert_content_value??)>
 ${prefixName?string('  ', ', ')}:insert_content_value
 <#assign prefixName = false>
 </#if>
 <#if (insert_createdByCode??) && (insert_createdByCode_value??)>
 ${prefixName?string('  ', ', ')}:insert_createdByCode_value
+<#assign prefixName = false>
+</#if>
+<#if (insert_createdById??) && (insert_createdById_value??)>
+${prefixName?string('  ', ', ')}:insert_createdById_value
 <#assign prefixName = false>
 </#if>
 <#if (insert_createdDate??) && (insert_createdDate_value??)>
@@ -159,6 +199,10 @@ ${prefixName?string('  ', ', ')}:insert_departmentCode_value
 </#if>
 <#if (insert_departmentCodes??) && (insert_departmentCodes_value??)>
 ${prefixName?string('  ', ', ')}:insert_departmentCodes_value
+<#assign prefixName = false>
+</#if>
+<#if (insert_departmentIds??) && (insert_departmentIds_value??)>
+${prefixName?string('  ', ', ')}:insert_departmentIds_value
 <#assign prefixName = false>
 </#if>
 <#if (insert_endDate??) && (insert_endDate_value??)>
@@ -181,6 +225,10 @@ ${prefixName?string('  ', ', ')}:insert_jsonData_value
 ${prefixName?string('  ', ', ')}:insert_lastModifiedByCode_value
 <#assign prefixName = false>
 </#if>
+<#if (insert_lastModifiedById??) && (insert_lastModifiedById_value??)>
+${prefixName?string('  ', ', ')}:insert_lastModifiedById_value
+<#assign prefixName = false>
+</#if>
 <#if (insert_lastModifiedDate??) && (insert_lastModifiedDate_value??)>
 ${prefixName?string('  ', ', ')}:insert_lastModifiedDate_value
 <#assign prefixName = false>
@@ -201,8 +249,16 @@ ${prefixName?string('  ', ', ')}:insert_orgCode_value
 ${prefixName?string('  ', ', ')}:insert_orgCodes_value
 <#assign prefixName = false>
 </#if>
+<#if (insert_orgIds??) && (insert_orgIds_value??)>
+${prefixName?string('  ', ', ')}:insert_orgIds_value
+<#assign prefixName = false>
+</#if>
 <#if (insert_personalCode??) && (insert_personalCode_value??)>
 ${prefixName?string('  ', ', ')}:insert_personalCode_value
+<#assign prefixName = false>
+</#if>
+<#if (insert_personalId??) && (insert_personalId_value??)>
+${prefixName?string('  ', ', ')}:insert_personalId_value
 <#assign prefixName = false>
 </#if>
 <#if (insert_pictureUrl??) && (insert_pictureUrl_value??)>
@@ -247,6 +303,14 @@ ${prefixName?string('WHERE ', 'AND ')}(E."author_person_code" IS NULL OR E."auth
 </#if>
 <#assign prefixName = false>
 </#if>
+<#if (where_and_eq_authorPersonId??)>
+<#if (where_and_eq_authorPersonId_value??)>
+${prefixName?string('WHERE ', 'AND ')}E."author_person_id" = :where_and_eq_authorPersonId_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}(E."author_person_id" IS NULL OR E."author_person_id" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
 <#if (where_and_eq_batchNo??)>
 <#if (where_and_eq_batchNo_value??)>
 ${prefixName?string('WHERE ', 'AND ')}E."batch_no" = :where_and_eq_batchNo_value
@@ -271,6 +335,14 @@ ${prefixName?string('WHERE ', 'AND ')}(E."check_person_code" IS NULL OR E."check
 </#if>
 <#assign prefixName = false>
 </#if>
+<#if (where_and_eq_checkPersonId??)>
+<#if (where_and_eq_checkPersonId_value??)>
+${prefixName?string('WHERE ', 'AND ')}E."check_person_id" = :where_and_eq_checkPersonId_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}(E."check_person_id" IS NULL OR E."check_person_id" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
 <#if (where_and_eq_content??)>
 <#if (where_and_eq_content_value??)>
 ${prefixName?string('WHERE ', 'AND ')}E."content" = :where_and_eq_content_value
@@ -284,6 +356,14 @@ ${prefixName?string('WHERE ', 'AND ')}(E."content" IS NULL OR E."content" = '')
 ${prefixName?string('WHERE ', 'AND ')}E."created_by_code" = :where_and_eq_createdByCode_value
 <#else>
 ${prefixName?string('WHERE ', 'AND ')}(E."created_by_code" IS NULL OR E."created_by_code" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
+<#if (where_and_eq_createdById??)>
+<#if (where_and_eq_createdById_value??)>
+${prefixName?string('WHERE ', 'AND ')}E."created_by_id" = :where_and_eq_createdById_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}(E."created_by_id" IS NULL OR E."created_by_id" = '')
 </#if>
 <#assign prefixName = false>
 </#if>
@@ -316,6 +396,14 @@ ${prefixName?string('WHERE ', 'AND ')}(E."department_code" IS NULL OR E."departm
 ${prefixName?string('WHERE ', 'AND ')}E."department_codes" = :where_and_eq_departmentCodes_value
 <#else>
 ${prefixName?string('WHERE ', 'AND ')}(E."department_codes" IS NULL OR E."department_codes" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
+<#if (where_and_eq_departmentIds??)>
+<#if (where_and_eq_departmentIds_value??)>
+${prefixName?string('WHERE ', 'AND ')}E."department_ids" = :where_and_eq_departmentIds_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}(E."department_ids" IS NULL OR E."department_ids" = '')
 </#if>
 <#assign prefixName = false>
 </#if>
@@ -359,6 +447,14 @@ ${prefixName?string('WHERE ', 'AND ')}(E."last_modified_by_code" IS NULL OR E."l
 </#if>
 <#assign prefixName = false>
 </#if>
+<#if (where_and_eq_lastModifiedById??)>
+<#if (where_and_eq_lastModifiedById_value??)>
+${prefixName?string('WHERE ', 'AND ')}E."last_modified_by_id" = :where_and_eq_lastModifiedById_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}(E."last_modified_by_id" IS NULL OR E."last_modified_by_id" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
 <#if (where_and_eq_lastModifiedDate??)>
 <#if (where_and_eq_lastModifiedDate_value??)>
 ${prefixName?string('WHERE ', 'AND ')}E."last_modified_date" = :where_and_eq_lastModifiedDate_value
@@ -399,11 +495,27 @@ ${prefixName?string('WHERE ', 'AND ')}(E."org_codes" IS NULL OR E."org_codes" = 
 </#if>
 <#assign prefixName = false>
 </#if>
+<#if (where_and_eq_orgIds??)>
+<#if (where_and_eq_orgIds_value??)>
+${prefixName?string('WHERE ', 'AND ')}E."org_ids" = :where_and_eq_orgIds_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}(E."org_ids" IS NULL OR E."org_ids" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
 <#if (where_and_eq_personalCode??)>
 <#if (where_and_eq_personalCode_value??)>
 ${prefixName?string('WHERE ', 'AND ')}E."personal_code" = :where_and_eq_personalCode_value
 <#else>
 ${prefixName?string('WHERE ', 'AND ')}(E."personal_code" IS NULL OR E."personal_code" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
+<#if (where_and_eq_personalId??)>
+<#if (where_and_eq_personalId_value??)>
+${prefixName?string('WHERE ', 'AND ')}E."personal_id" = :where_and_eq_personalId_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}(E."personal_id" IS NULL OR E."personal_id" = '')
 </#if>
 <#assign prefixName = false>
 </#if>

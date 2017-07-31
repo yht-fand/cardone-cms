@@ -7,6 +7,14 @@ ${prefixName?string('WHERE ', 'AND ')}("author_person_code" IS NULL OR "author_p
 </#if>
 <#assign prefixName = false>
 </#if>
+<#if (where_and_eq_authorPersonId??)>
+<#if (where_and_eq_authorPersonId_value??)>
+${prefixName?string('WHERE ', 'AND ')}"author_person_id" = :where_and_eq_authorPersonId_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}("author_person_id" IS NULL OR "author_person_id" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
 <#if (where_and_eq_batchNo??)>
 <#if (where_and_eq_batchNo_value??)>
 ${prefixName?string('WHERE ', 'AND ')}"batch_no" = :where_and_eq_batchNo_value
@@ -31,6 +39,14 @@ ${prefixName?string('WHERE ', 'AND ')}("check_person_code" IS NULL OR "check_per
 </#if>
 <#assign prefixName = false>
 </#if>
+<#if (where_and_eq_checkPersonId??)>
+<#if (where_and_eq_checkPersonId_value??)>
+${prefixName?string('WHERE ', 'AND ')}"check_person_id" = :where_and_eq_checkPersonId_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}("check_person_id" IS NULL OR "check_person_id" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
 <#if (where_and_eq_content??)>
 <#if (where_and_eq_content_value??)>
 ${prefixName?string('WHERE ', 'AND ')}"content" = :where_and_eq_content_value
@@ -44,6 +60,14 @@ ${prefixName?string('WHERE ', 'AND ')}("content" IS NULL OR "content" = '')
 ${prefixName?string('WHERE ', 'AND ')}"created_by_code" = :where_and_eq_createdByCode_value
 <#else>
 ${prefixName?string('WHERE ', 'AND ')}("created_by_code" IS NULL OR "created_by_code" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
+<#if (where_and_eq_createdById??)>
+<#if (where_and_eq_createdById_value??)>
+${prefixName?string('WHERE ', 'AND ')}"created_by_id" = :where_and_eq_createdById_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}("created_by_id" IS NULL OR "created_by_id" = '')
 </#if>
 <#assign prefixName = false>
 </#if>
@@ -76,6 +100,14 @@ ${prefixName?string('WHERE ', 'AND ')}("department_code" IS NULL OR "department_
 ${prefixName?string('WHERE ', 'AND ')}"department_codes" = :where_and_eq_departmentCodes_value
 <#else>
 ${prefixName?string('WHERE ', 'AND ')}("department_codes" IS NULL OR "department_codes" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
+<#if (where_and_eq_departmentIds??)>
+<#if (where_and_eq_departmentIds_value??)>
+${prefixName?string('WHERE ', 'AND ')}"department_ids" = :where_and_eq_departmentIds_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}("department_ids" IS NULL OR "department_ids" = '')
 </#if>
 <#assign prefixName = false>
 </#if>
@@ -119,6 +151,14 @@ ${prefixName?string('WHERE ', 'AND ')}("last_modified_by_code" IS NULL OR "last_
 </#if>
 <#assign prefixName = false>
 </#if>
+<#if (where_and_eq_lastModifiedById??)>
+<#if (where_and_eq_lastModifiedById_value??)>
+${prefixName?string('WHERE ', 'AND ')}"last_modified_by_id" = :where_and_eq_lastModifiedById_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}("last_modified_by_id" IS NULL OR "last_modified_by_id" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
 <#if (where_and_eq_lastModifiedDate??)>
 <#if (where_and_eq_lastModifiedDate_value??)>
 ${prefixName?string('WHERE ', 'AND ')}"last_modified_date" = :where_and_eq_lastModifiedDate_value
@@ -159,11 +199,27 @@ ${prefixName?string('WHERE ', 'AND ')}("org_codes" IS NULL OR "org_codes" = '')
 </#if>
 <#assign prefixName = false>
 </#if>
+<#if (where_and_eq_orgIds??)>
+<#if (where_and_eq_orgIds_value??)>
+${prefixName?string('WHERE ', 'AND ')}"org_ids" = :where_and_eq_orgIds_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}("org_ids" IS NULL OR "org_ids" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
 <#if (where_and_eq_personalCode??)>
 <#if (where_and_eq_personalCode_value??)>
 ${prefixName?string('WHERE ', 'AND ')}"personal_code" = :where_and_eq_personalCode_value
 <#else>
 ${prefixName?string('WHERE ', 'AND ')}("personal_code" IS NULL OR "personal_code" = '')
+</#if>
+<#assign prefixName = false>
+</#if>
+<#if (where_and_eq_personalId??)>
+<#if (where_and_eq_personalId_value??)>
+${prefixName?string('WHERE ', 'AND ')}"personal_id" = :where_and_eq_personalId_value
+<#else>
+${prefixName?string('WHERE ', 'AND ')}("personal_id" IS NULL OR "personal_id" = '')
 </#if>
 <#assign prefixName = false>
 </#if>

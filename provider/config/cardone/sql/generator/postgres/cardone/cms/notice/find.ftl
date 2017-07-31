@@ -4,6 +4,10 @@ SELECT
 ${prefixName?string('  ', ', ')}"author_person_code"
 <#assign prefixName = false>
 </#if>
+<#if (select_authorPersonId??)>
+${prefixName?string('  ', ', ')}"author_person_id"
+<#assign prefixName = false>
+</#if>
 <#if (select_batchNo??)>
 ${prefixName?string('  ', ', ')}"batch_no"
 <#assign prefixName = false>
@@ -16,12 +20,20 @@ ${prefixName?string('  ', ', ')}"begin_date"
 ${prefixName?string('  ', ', ')}"check_person_code"
 <#assign prefixName = false>
 </#if>
+<#if (select_checkPersonId??)>
+${prefixName?string('  ', ', ')}"check_person_id"
+<#assign prefixName = false>
+</#if>
 <#if (select_content??)>
 ${prefixName?string('  ', ', ')}"content"
 <#assign prefixName = false>
 </#if>
 <#if (select_createdByCode??)>
 ${prefixName?string('  ', ', ')}"created_by_code"
+<#assign prefixName = false>
+</#if>
+<#if (select_createdById??)>
+${prefixName?string('  ', ', ')}"created_by_id"
 <#assign prefixName = false>
 </#if>
 <#if (select_createdDate??)>
@@ -38,6 +50,10 @@ ${prefixName?string('  ', ', ')}"department_code"
 </#if>
 <#if (select_departmentCodes??)>
 ${prefixName?string('  ', ', ')}"department_codes"
+<#assign prefixName = false>
+</#if>
+<#if (select_departmentIds??)>
+${prefixName?string('  ', ', ')}"department_ids"
 <#assign prefixName = false>
 </#if>
 <#if (select_endDate??)>
@@ -60,6 +76,10 @@ ${prefixName?string('  ', ', ')}"json_data"
 ${prefixName?string('  ', ', ')}"last_modified_by_code"
 <#assign prefixName = false>
 </#if>
+<#if (select_lastModifiedById??)>
+${prefixName?string('  ', ', ')}"last_modified_by_id"
+<#assign prefixName = false>
+</#if>
 <#if (select_lastModifiedDate??)>
 ${prefixName?string('  ', ', ')}"last_modified_date"
 <#assign prefixName = false>
@@ -80,8 +100,16 @@ ${prefixName?string('  ', ', ')}"org_code"
 ${prefixName?string('  ', ', ')}"org_codes"
 <#assign prefixName = false>
 </#if>
+<#if (select_orgIds??)>
+${prefixName?string('  ', ', ')}"org_ids"
+<#assign prefixName = false>
+</#if>
 <#if (select_personalCode??)>
 ${prefixName?string('  ', ', ')}"personal_code"
+<#assign prefixName = false>
+</#if>
+<#if (select_personalId??)>
+${prefixName?string('  ', ', ')}"personal_id"
 <#assign prefixName = false>
 </#if>
 <#if (select_pictureUrl??)>
@@ -126,6 +154,10 @@ FROM c1_notice
 ${prefixName?string('ORDER BY ', ', ')}"author_person_code" ${order_by_authorPersonCode_value!}
 <#assign prefixName = false>
 </#if>
+<#if (order_by_authorPersonId??)>
+${prefixName?string('ORDER BY ', ', ')}"author_person_id" ${order_by_authorPersonId_value!}
+<#assign prefixName = false>
+</#if>
 <#if (order_by_batchNo??)>
 ${prefixName?string('ORDER BY ', ', ')}"batch_no" ${order_by_batchNo_value!}
 <#assign prefixName = false>
@@ -138,12 +170,20 @@ ${prefixName?string('ORDER BY ', ', ')}"begin_date" ${order_by_beginDate_value!}
 ${prefixName?string('ORDER BY ', ', ')}"check_person_code" ${order_by_checkPersonCode_value!}
 <#assign prefixName = false>
 </#if>
+<#if (order_by_checkPersonId??)>
+${prefixName?string('ORDER BY ', ', ')}"check_person_id" ${order_by_checkPersonId_value!}
+<#assign prefixName = false>
+</#if>
 <#if (order_by_content??)>
 ${prefixName?string('ORDER BY ', ', ')}"content" ${order_by_content_value!}
 <#assign prefixName = false>
 </#if>
 <#if (order_by_createdByCode??)>
 ${prefixName?string('ORDER BY ', ', ')}"created_by_code" ${order_by_createdByCode_value!}
+<#assign prefixName = false>
+</#if>
+<#if (order_by_createdById??)>
+${prefixName?string('ORDER BY ', ', ')}"created_by_id" ${order_by_createdById_value!}
 <#assign prefixName = false>
 </#if>
 <#if (order_by_createdDate??)>
@@ -160,6 +200,10 @@ ${prefixName?string('ORDER BY ', ', ')}"department_code" ${order_by_departmentCo
 </#if>
 <#if (order_by_departmentCodes??)>
 ${prefixName?string('ORDER BY ', ', ')}"department_codes" ${order_by_departmentCodes_value!}
+<#assign prefixName = false>
+</#if>
+<#if (order_by_departmentIds??)>
+${prefixName?string('ORDER BY ', ', ')}"department_ids" ${order_by_departmentIds_value!}
 <#assign prefixName = false>
 </#if>
 <#if (order_by_endDate??)>
@@ -182,6 +226,10 @@ ${prefixName?string('ORDER BY ', ', ')}"json_data" ${order_by_jsonData_value!}
 ${prefixName?string('ORDER BY ', ', ')}"last_modified_by_code" ${order_by_lastModifiedByCode_value!}
 <#assign prefixName = false>
 </#if>
+<#if (order_by_lastModifiedById??)>
+${prefixName?string('ORDER BY ', ', ')}"last_modified_by_id" ${order_by_lastModifiedById_value!}
+<#assign prefixName = false>
+</#if>
 <#if (order_by_lastModifiedDate??)>
 ${prefixName?string('ORDER BY ', ', ')}"last_modified_date" ${order_by_lastModifiedDate_value!}
 <#assign prefixName = false>
@@ -202,8 +250,16 @@ ${prefixName?string('ORDER BY ', ', ')}"org_code" ${order_by_orgCode_value!}
 ${prefixName?string('ORDER BY ', ', ')}"org_codes" ${order_by_orgCodes_value!}
 <#assign prefixName = false>
 </#if>
+<#if (order_by_orgIds??)>
+${prefixName?string('ORDER BY ', ', ')}"org_ids" ${order_by_orgIds_value!}
+<#assign prefixName = false>
+</#if>
 <#if (order_by_personalCode??)>
 ${prefixName?string('ORDER BY ', ', ')}"personal_code" ${order_by_personalCode_value!}
+<#assign prefixName = false>
+</#if>
+<#if (order_by_personalId??)>
+${prefixName?string('ORDER BY ', ', ')}"personal_id" ${order_by_personalId_value!}
 <#assign prefixName = false>
 </#if>
 <#if (order_by_pictureUrl??)>

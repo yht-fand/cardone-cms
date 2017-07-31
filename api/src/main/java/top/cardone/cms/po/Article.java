@@ -25,6 +25,13 @@ public class Article implements java.io.Serializable {
     protected String authorPersonCode;
 
     /**
+     * 作者标识
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String authorPersonId;
+
+    /**
      * 批次编号
      */
     @lombok.Getter
@@ -46,6 +53,13 @@ public class Article implements java.io.Serializable {
     protected String checkPersonCode;
 
     /**
+     * 审核人标识
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String checkPersonId;
+
+    /**
      * 正文
      */
     @lombok.Getter
@@ -53,11 +67,18 @@ public class Article implements java.io.Serializable {
     protected String content;
 
     /**
-     * 创建人代码
+     * 创建人编号
      */
     @lombok.Getter
     @lombok.Setter
     protected String createdByCode;
+
+    /**
+     * 创建人标识
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String createdById;
 
     /**
      * 创建日期
@@ -67,25 +88,32 @@ public class Article implements java.io.Serializable {
     protected Date createdDate;
 
     /**
-     * 数据状态代码(数据字典)
+     * 数据状态编号(数据字典)
      */
     @lombok.Getter
     @lombok.Setter
     protected String dataStateCode;
 
     /**
-     * 部门代码
+     * 部门编号
      */
     @lombok.Getter
     @lombok.Setter
     protected String departmentCode;
 
     /**
-     * 部门代码集合
+     * 部门编号集合
      */
     @lombok.Getter
     @lombok.Setter
     protected String departmentCodes;
+
+    /**
+     * 部门标识集合
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String departmentIds;
 
     /**
      * 结束日期
@@ -95,14 +123,14 @@ public class Article implements java.io.Serializable {
     protected Date endDate;
 
     /**
-     * 标记代码(数据字典：工作流、同步、生成、录入、审批)
+     * 标记编号(数据字典：工作流、同步、生成、录入、审批)
      */
     @lombok.Getter
     @lombok.Setter
     protected String flagCode;
 
     /**
-     * 标识对象代码(工作流：工作流标识、同步：批次号、生成：操作者编号、录入：操作者编号、审批：操作者编号)
+     * 标识对象编号(工作流：工作流标识、同步：批次号、生成：操作者编号、录入：操作者编号、审批：操作者编号)
      */
     @lombok.Getter
     @lombok.Setter
@@ -123,11 +151,18 @@ public class Article implements java.io.Serializable {
     protected Object jsonData;
 
     /**
-     * 最后修改人代码
+     * 最后修改人编号
      */
     @lombok.Getter
     @lombok.Setter
     protected String lastModifiedByCode;
+
+    /**
+     * 最后修改人标识
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String lastModifiedById;
 
     /**
      * 最后修改日期
@@ -144,25 +179,39 @@ public class Article implements java.io.Serializable {
     protected Long orderBy;
 
     /**
-     * 组织代码
+     * 组织编号
      */
     @lombok.Getter
     @lombok.Setter
     protected String orgCode;
 
     /**
-     * 组织代码集合
+     * 组织编号集合
      */
     @lombok.Getter
     @lombok.Setter
     protected String orgCodes;
 
     /**
-     * 个人代码
+     * 组织标识集合
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String orgIds;
+
+    /**
+     * 个人编号
      */
     @lombok.Getter
     @lombok.Setter
     protected String personalCode;
+
+    /**
+     * 个人标识
+     */
+    @lombok.Getter
+    @lombok.Setter
+    protected String personalId;
 
     /**
      * 图片路径
@@ -186,7 +235,7 @@ public class Article implements java.io.Serializable {
     protected Date releaseDate;
 
     /**
-     * 站点代码
+     * 站点编号
      */
     @lombok.Getter
     @lombok.Setter
@@ -200,14 +249,14 @@ public class Article implements java.io.Serializable {
     protected String sourcesCode;
 
     /**
-     * 状态代码(数据字典)
+     * 状态编号(数据字典)
      */
     @lombok.Getter
     @lombok.Setter
     protected String stateCode;
 
     /**
-     * 系统信息代码
+     * 系统信息编号
      */
     @lombok.Getter
     @lombok.Setter

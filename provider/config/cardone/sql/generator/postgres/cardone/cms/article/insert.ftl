@@ -9,6 +9,10 @@ ${prefixName?string('  ', ', ')}"article_id"
 ${prefixName?string('  ', ', ')}"author_person_code"
 <#assign prefixName = false>
 </#if>
+<#if (insert_authorPersonId??) && (insert_authorPersonId_value??)>
+${prefixName?string('  ', ', ')}"author_person_id"
+<#assign prefixName = false>
+</#if>
 <#if (insert_batchNo??) && (insert_batchNo_value??)>
 ${prefixName?string('  ', ', ')}"batch_no"
 <#assign prefixName = false>
@@ -21,12 +25,20 @@ ${prefixName?string('  ', ', ')}"begin_date"
 ${prefixName?string('  ', ', ')}"check_person_code"
 <#assign prefixName = false>
 </#if>
+<#if (insert_checkPersonId??) && (insert_checkPersonId_value??)>
+${prefixName?string('  ', ', ')}"check_person_id"
+<#assign prefixName = false>
+</#if>
 <#if (insert_content??) && (insert_content_value??)>
 ${prefixName?string('  ', ', ')}"content"
 <#assign prefixName = false>
 </#if>
 <#if (insert_createdByCode??) && (insert_createdByCode_value??)>
 ${prefixName?string('  ', ', ')}"created_by_code"
+<#assign prefixName = false>
+</#if>
+<#if (insert_createdById??) && (insert_createdById_value??)>
+${prefixName?string('  ', ', ')}"created_by_id"
 <#assign prefixName = false>
 </#if>
 <#if (insert_createdDate??) && (insert_createdDate_value??)>
@@ -43,6 +55,10 @@ ${prefixName?string('  ', ', ')}"department_code"
 </#if>
 <#if (insert_departmentCodes??) && (insert_departmentCodes_value??)>
 ${prefixName?string('  ', ', ')}"department_codes"
+<#assign prefixName = false>
+</#if>
+<#if (insert_departmentIds??) && (insert_departmentIds_value??)>
+${prefixName?string('  ', ', ')}"department_ids"
 <#assign prefixName = false>
 </#if>
 <#if (insert_endDate??) && (insert_endDate_value??)>
@@ -69,6 +85,10 @@ ${prefixName?string('  ', ', ')}"json_data"
 ${prefixName?string('  ', ', ')}"last_modified_by_code"
 <#assign prefixName = false>
 </#if>
+<#if (insert_lastModifiedById??) && (insert_lastModifiedById_value??)>
+${prefixName?string('  ', ', ')}"last_modified_by_id"
+<#assign prefixName = false>
+</#if>
 <#if (insert_lastModifiedDate??) && (insert_lastModifiedDate_value??)>
 ${prefixName?string('  ', ', ')}"last_modified_date"
 <#assign prefixName = false>
@@ -85,8 +105,16 @@ ${prefixName?string('  ', ', ')}"org_code"
 ${prefixName?string('  ', ', ')}"org_codes"
 <#assign prefixName = false>
 </#if>
+<#if (insert_orgIds??) && (insert_orgIds_value??)>
+${prefixName?string('  ', ', ')}"org_ids"
+<#assign prefixName = false>
+</#if>
 <#if (insert_personalCode??) && (insert_personalCode_value??)>
 ${prefixName?string('  ', ', ')}"personal_code"
+<#assign prefixName = false>
+</#if>
+<#if (insert_personalId??) && (insert_personalId_value??)>
+${prefixName?string('  ', ', ')}"personal_id"
 <#assign prefixName = false>
 </#if>
 <#if (insert_pictureUrl??) && (insert_pictureUrl_value??)>
@@ -136,6 +164,10 @@ ${prefixName?string('  ', ', ')}:insert_articleId_value
 ${prefixName?string('  ', ', ')}:insert_authorPersonCode_value
 <#assign prefixName = false>
 </#if>
+<#if (insert_authorPersonId??) && (insert_authorPersonId_value??)>
+${prefixName?string('  ', ', ')}:insert_authorPersonId_value
+<#assign prefixName = false>
+</#if>
 <#if (insert_batchNo??) && (insert_batchNo_value??)>
 ${prefixName?string('  ', ', ')}:insert_batchNo_value
 <#assign prefixName = false>
@@ -148,12 +180,20 @@ ${prefixName?string('  ', ', ')}:insert_beginDate_value
 ${prefixName?string('  ', ', ')}:insert_checkPersonCode_value
 <#assign prefixName = false>
 </#if>
+<#if (insert_checkPersonId??) && (insert_checkPersonId_value??)>
+${prefixName?string('  ', ', ')}:insert_checkPersonId_value
+<#assign prefixName = false>
+</#if>
 <#if (insert_content??) && (insert_content_value??)>
 ${prefixName?string('  ', ', ')}:insert_content_value
 <#assign prefixName = false>
 </#if>
 <#if (insert_createdByCode??) && (insert_createdByCode_value??)>
 ${prefixName?string('  ', ', ')}:insert_createdByCode_value
+<#assign prefixName = false>
+</#if>
+<#if (insert_createdById??) && (insert_createdById_value??)>
+${prefixName?string('  ', ', ')}:insert_createdById_value
 <#assign prefixName = false>
 </#if>
 <#if (insert_createdDate??) && (insert_createdDate_value??)>
@@ -170,6 +210,10 @@ ${prefixName?string('  ', ', ')}:insert_departmentCode_value
 </#if>
 <#if (insert_departmentCodes??) && (insert_departmentCodes_value??)>
 ${prefixName?string('  ', ', ')}:insert_departmentCodes_value
+<#assign prefixName = false>
+</#if>
+<#if (insert_departmentIds??) && (insert_departmentIds_value??)>
+${prefixName?string('  ', ', ')}:insert_departmentIds_value
 <#assign prefixName = false>
 </#if>
 <#if (insert_endDate??) && (insert_endDate_value??)>
@@ -196,6 +240,10 @@ ${prefixName?string('  ', ', ')}:insert_jsonData_value
 ${prefixName?string('  ', ', ')}:insert_lastModifiedByCode_value
 <#assign prefixName = false>
 </#if>
+<#if (insert_lastModifiedById??) && (insert_lastModifiedById_value??)>
+${prefixName?string('  ', ', ')}:insert_lastModifiedById_value
+<#assign prefixName = false>
+</#if>
 <#if (insert_lastModifiedDate??) && (insert_lastModifiedDate_value??)>
 ${prefixName?string('  ', ', ')}:insert_lastModifiedDate_value
 <#assign prefixName = false>
@@ -212,8 +260,16 @@ ${prefixName?string('  ', ', ')}:insert_orgCode_value
 ${prefixName?string('  ', ', ')}:insert_orgCodes_value
 <#assign prefixName = false>
 </#if>
+<#if (insert_orgIds??) && (insert_orgIds_value??)>
+${prefixName?string('  ', ', ')}:insert_orgIds_value
+<#assign prefixName = false>
+</#if>
 <#if (insert_personalCode??) && (insert_personalCode_value??)>
 ${prefixName?string('  ', ', ')}:insert_personalCode_value
+<#assign prefixName = false>
+</#if>
+<#if (insert_personalId??) && (insert_personalId_value??)>
+${prefixName?string('  ', ', ')}:insert_personalId_value
 <#assign prefixName = false>
 </#if>
 <#if (insert_pictureUrl??) && (insert_pictureUrl_value??)>

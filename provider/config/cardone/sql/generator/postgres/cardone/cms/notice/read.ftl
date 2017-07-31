@@ -3,6 +3,9 @@ SELECT
 <#case "authorPersonCode">
 "author_person_code"
 <#break>
+<#case "authorPersonId">
+"author_person_id"
+<#break>
 <#case "batchNo">
 "batch_no"
 <#break>
@@ -12,11 +15,17 @@ SELECT
 <#case "checkPersonCode">
 "check_person_code"
 <#break>
+<#case "checkPersonId">
+"check_person_id"
+<#break>
 <#case "content">
 "content"
 <#break>
 <#case "createdByCode">
 "created_by_code"
+<#break>
+<#case "createdById">
+"created_by_id"
 <#break>
 <#case "createdDate">
 "created_date"
@@ -29,6 +38,9 @@ SELECT
 <#break>
 <#case "departmentCodes">
 "department_codes"
+<#break>
+<#case "departmentIds">
+"department_ids"
 <#break>
 <#case "endDate">
 "end_date"
@@ -45,6 +57,9 @@ SELECT
 <#case "lastModifiedByCode">
 "last_modified_by_code"
 <#break>
+<#case "lastModifiedById">
+"last_modified_by_id"
+<#break>
 <#case "lastModifiedDate">
 "last_modified_date"
 <#break>
@@ -60,8 +75,14 @@ SELECT
 <#case "orgCodes">
 "org_codes"
 <#break>
+<#case "orgIds">
+"org_ids"
+<#break>
 <#case "personalCode">
 "personal_code"
+<#break>
+<#case "personalId">
+"personal_id"
 <#break>
 <#case "pictureUrl">
 "picture_url"

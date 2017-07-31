@@ -78,15 +78,21 @@ class r0004 implements java.io.Serializable {
 
             data['authorPersonCode'] = contentItem['author_person_code']
 
+            data['authorPersonId'] = contentItem['author_person_id']
+
             data['batchNo'] = contentItem['batch_no']
 
             data['beginDate'] = contentItem['begin_date']
 
             data['checkPersonCode'] = contentItem['check_person_code']
 
+            data['checkPersonId'] = contentItem['check_person_id']
+
             data['content'] = contentItem['content']
 
             data['createdByCode'] = contentItem['created_by_code']
+
+            data['createdById'] = contentItem['created_by_id']
 
             data['createdDate'] = contentItem['created_date']
 
@@ -95,6 +101,8 @@ class r0004 implements java.io.Serializable {
             data['departmentCode'] = contentItem['department_code']
 
             data['departmentCodes'] = contentItem['department_codes']
+
+            data['departmentIds'] = contentItem['department_ids']
 
             data['endDate'] = contentItem['end_date']
 
@@ -108,6 +116,8 @@ class r0004 implements java.io.Serializable {
 
             data['lastModifiedByCode'] = contentItem['last_modified_by_code']
 
+            data['lastModifiedById'] = contentItem['last_modified_by_id']
+
             data['lastModifiedDate'] = contentItem['last_modified_date']
 
             data['orderBy'] = contentItem['order_by_']
@@ -116,7 +126,11 @@ class r0004 implements java.io.Serializable {
 
             data['orgCodes'] = contentItem['org_codes']
 
+            data['orgIds'] = contentItem['org_ids']
+
             data['personalCode'] = contentItem['personal_code']
+
+            data['personalId'] = contentItem['personal_id']
 
             data['pictureUrl'] = contentItem['picture_url']
 
