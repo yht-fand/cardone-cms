@@ -16,8 +16,7 @@
     <rabbit:queue
             name="queue:cardone-cms-${cardone-cms-version}:top.cardone.cms.service.NoticeService"/>
 
-    <bean id="top.cardone.cms.service.NoticeServiceExporter"
-          class="org.springframework.amqp.remoting.service.AmqpInvokerServiceExporter">
+    <bean id="top.cardone.cms.service.NoticeServiceExporter" parent="remoteInvocationExecutorParnet">
         <property name="serviceInterface" value="top.cardone.cms.service.NoticeService"/>
         <property name="service" ref="top.cardone.cms.service.NoticeService"/>
         <property name="amqpTemplate" ref="org.springframework.amqp.core.AmqpTemplate"/>
