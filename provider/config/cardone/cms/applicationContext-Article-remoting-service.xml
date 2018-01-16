@@ -21,7 +21,7 @@
         <property name="service" ref="top.cardone.cms.service.ArticleService"/>
     </bean>
 
-    <rabbit:listener-container acknowledge="none" concurrency="20" prefetch="5">
+    <rabbit:listener-container acknowledge="none" concurrency="10" prefetch="5">
         <rabbit:listener ref="top.cardone.cms.service.ArticleServiceExporter"
                          queue-names="queue:cardone-cms-${cardone-cms-version}:top.cardone.cms.service.ArticleService"/>
     </rabbit:listener-container>
