@@ -111,5 +111,5 @@ SELECT
 <#default>
 COUNT(*) AS COUNT_
 </#switch>
-FROM c1_notice
+FROM "c1_notice"
 <#include "where.ftl">

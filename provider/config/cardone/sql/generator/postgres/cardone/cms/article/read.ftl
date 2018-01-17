@@ -117,5 +117,5 @@ SELECT
 <#default>
 COUNT(*) AS COUNT_
 </#switch>
-FROM c1_article
+FROM "c1_article"
 <#include "where.ftl">

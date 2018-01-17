@@ -1,6 +1,6 @@
 INSERT
 INTO
-c1_notice
+"c1_notice"
 (<#assign prefixName = true>
 <#if (insert_authorPersonCode??) && (insert_authorPersonCode_value??)>
 ${prefixName?string('  ', ', ')}"author_person_code"
@@ -293,7 +293,7 @@ ${prefixName?string('  ', ', ')}:insert_typeCode_value
 ${prefixName?string('  ', ', ')}:insert_version_value
 <#assign prefixName = false>
 </#if>
-WHERE NOT EXISTS (SELECT 1 FROM c1_notice E
+WHERE NOT EXISTS (SELECT 1 FROM "c1_notice" E
 <#assign prefixName = true>
 <#if (where_and_eq_authorPersonCode??)>
 <#if (where_and_eq_authorPersonCode_value??)>

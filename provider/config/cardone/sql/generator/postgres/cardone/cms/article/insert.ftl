@@ -1,5 +1,5 @@
 INSERT
-INTO c1_article
+INTO "c1_article"
 (<#assign prefixName = true>
 <#if (insert_articleId??) && (insert_articleId_value??)>
 ${prefixName?string('  ', ', ')}"article_id"

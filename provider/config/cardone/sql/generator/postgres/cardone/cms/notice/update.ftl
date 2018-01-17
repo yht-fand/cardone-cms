@@ -1,4 +1,4 @@
-UPDATE c1_notice
+UPDATE "c1_notice"
 <#assign prefixName = true>
 <#if (update_authorPersonCode??)>
 ${prefixName?string('SET ', ', ')}"author_person_code" = :update_authorPersonCode_value

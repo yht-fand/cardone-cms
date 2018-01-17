@@ -1,5 +1,5 @@
 INSERT
-INTO c1_notice
+INTO "c1_notice"
 (<#assign prefixName = true>
 <#if (insert_authorPersonCode??) && (insert_authorPersonCode_value??)>
 ${prefixName?string('  ', ', ')}"author_person_code"

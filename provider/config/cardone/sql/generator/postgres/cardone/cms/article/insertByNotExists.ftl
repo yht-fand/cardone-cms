@@ -1,6 +1,6 @@
 INSERT
 INTO
-c1_article
+"c1_article"
 (<#assign prefixName = true>
 <#if (insert_articleId??) && (insert_articleId_value??)>
 ${prefixName?string('  ', ', ')}"article_id"
@@ -309,7 +309,7 @@ ${prefixName?string('  ', ', ')}:insert_title_value
 ${prefixName?string('  ', ', ')}:insert_version_value
 <#assign prefixName = false>
 </#if>
-WHERE NOT EXISTS (SELECT 1 FROM c1_article E
+WHERE NOT EXISTS (SELECT 1 FROM "c1_article" E
 <#assign prefixName = true>
 <#if (where_and_eq_articleId??)>
 <#if (where_and_eq_articleId_value??)>

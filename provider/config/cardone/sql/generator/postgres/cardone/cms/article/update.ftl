@@ -1,4 +1,4 @@
-UPDATE c1_article
+UPDATE "c1_article"
 <#assign prefixName = true>
 <#if (update_articleId??)>
 ${prefixName?string('SET ', ', ')}"article_id" = :update_articleId_value
