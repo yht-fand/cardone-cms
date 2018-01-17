@@ -1,0 +1,14 @@
+{
+  "validation": {
+    "rules": {
+      "articleId": {
+        "required": true
+      }
+    },
+    "messages": {
+      "articleId": {
+        "required": "文章标识必填"
+      }
+    }
+  }
+}

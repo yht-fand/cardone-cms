@@ -1,0 +1,28 @@
+{
+  "validation": {
+    "rules": {
+      "articleCode": {
+        "required": true,
+        "minlength": 4,
+        "maxlength": 255
+      },
+      "name": {
+        "required": true,
+        "minlength": 4,
+        "maxlength": 255
+      }
+    },
+    "messages": {
+      "articleCode": {
+        "required": "文章编号必填",
+        "minlength": "文章编号需{0}个字符以上",
+        "maxlength": "文章编号需小于{0}个字符"
+      },
+      "name": {
+        "required": "文章名称必填",
+        "minlength": "文章名称需{0}个字符以上",
+        "maxlength": "文章名称需小于{0}个字符"
+      }
+    }
+  }
+}
