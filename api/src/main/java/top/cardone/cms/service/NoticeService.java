@@ -36,7 +36,7 @@ public interface NoticeService extends PageService {
      * @param findOne 公告标识
      * @return 公告对象
      */
-    @Cacheable(key = Caches.KEY_1)
+    @Cacheable
     default Map<String, Object> findOneByNoticeIdCache(Map<String, Object> findOne) {
         return this.findOneByNoticeId(findOne);
     }

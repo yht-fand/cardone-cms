@@ -36,7 +36,7 @@ public interface ArticleService extends PageService {
      * @param findOne 文章标识
      * @return 文章对象
      */
-    @Cacheable(key = Caches.KEY_1)
+    @Cacheable
     default Map<String, Object> findOneByArticleIdCache(Map<String, Object> findOne) {
         return this.findOneByArticleId(findOne);
     }
