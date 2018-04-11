@@ -15,6 +15,6 @@ import java.util.Map;
 public class ArticleServiceImpl extends PageServiceImpl<ArticleDao> implements top.cardone.cms.service.ArticleService {
     @Override
     public Map<String, Object> findOneByArticleId(Map<String, Object> findOne) {
-        return this.dao.findOneByArticleId(findOne);
+        return this.dao.findOneBySqlFileName("page.find", findOne);
     }
 }

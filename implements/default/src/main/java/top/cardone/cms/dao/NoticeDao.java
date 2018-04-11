@@ -10,11 +10,4 @@ import java.util.Map;
  * @author yao hai tao
  */
 public interface NoticeDao extends PageDao {
-    /**
-     * 查询公告对象
-     *
-     * @param findOne 公告标识
-     * @return 公告对象
-     */
-    Map<String, Object> findOneByNoticeId(Map<String, Object> findOne);
 }

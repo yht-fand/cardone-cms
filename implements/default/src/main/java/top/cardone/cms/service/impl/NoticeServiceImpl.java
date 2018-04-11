@@ -15,6 +15,6 @@ import java.util.Map;
 public class NoticeServiceImpl extends PageServiceImpl<NoticeDao> implements top.cardone.cms.service.NoticeService {
     @Override
     public Map<String, Object> findOneByNoticeId(Map<String, Object> findOne) {
-        return this.dao.findOneByNoticeId(findOne);
+        return this.dao.findOneBySqlFileName("page.find", findOne);
     }
 }
