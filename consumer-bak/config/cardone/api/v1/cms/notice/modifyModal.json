@@ -1,0 +1,14 @@
+{
+  "validation": {
+    "rules": {
+      "noticeId": {
+        "required": true
+      }
+    },
+    "messages": {
+      "noticeId": {
+        "required": "公告标识必填"
+      }
+    }
+  }
+}

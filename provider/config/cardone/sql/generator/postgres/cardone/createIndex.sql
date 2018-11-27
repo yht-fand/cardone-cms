@@ -204,3 +204,15 @@
 --create index IF NOT EXISTS idx_c1_notice_type_code ON c1_notice ("type_code" varchar_pattern_ops);
 
 
+
+
+ALTER TABLE "c1_article" ALTER COLUMN "json_data" TYPE jsonb;
+
+--- sql end ---
+
+ALTER TABLE "c1_notice" ALTER COLUMN "json_data" TYPE jsonb;
+
+--- sql end ---
+
+
+
