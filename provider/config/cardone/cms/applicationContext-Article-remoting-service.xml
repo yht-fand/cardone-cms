@@ -21,7 +21,7 @@
         <property name="service" ref="top.cardone.cms.service.ArticleService"/>
     </bean>
 
-    <rabbit:listener-container message-converter="amqpMessageConverter" connection-factory="rabbitConnectionFactory" concurrency="1" max-concurrency="1">
+    <rabbit:listener-container message-converter="amqpMessageConverter" connection-factory="rabbitConnectionFactory" concurrency="1" max-concurrency="10">
         <rabbit:listener ref="top.cardone.cms.service.ArticleServiceExporter"
                          queue-names="queue:cardone-cms-${cardone-cms-version}:top.cardone.cms.service.ArticleService"/>
     </rabbit:listener-container>
