@@ -5,7 +5,7 @@
        default-lazy-init="true">
     <!-- 文章 -->
     <bean id="top.cardone.cms.dao.ArticleDao"
-          class="top.cardone.cms.dao.impl.ArticleDaoImpl">
+          class="top.cardone.cms.dao.impl.ArticleDaoImpl" lazy-init="true">
         <property name="configTable">
             <map>
                 <entry key="config">
@@ -40,7 +40,7 @@
     </bean>
 	
     <bean id="top.cardone.cms.service.ArticleService"
-          class="top.cardone.cms.service.impl.ArticleServiceImpl">
+          class="top.cardone.cms.service.impl.ArticleServiceImpl" lazy-init="true">
 		<property name="dao" ref="top.cardone.cms.dao.ArticleDao"/>
 	</bean>
 </beans>
