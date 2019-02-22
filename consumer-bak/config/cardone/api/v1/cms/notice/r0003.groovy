@@ -66,77 +66,77 @@ class r0003 implements java.io.Serializable {
         for (def contentItem : output.getContent()) {
 			def data = [:]
 
-            data['authorPersonCode'] = contentItem['author_person_code']
+            data['authorPersonCode'] = contentItem['AUTHOR_PERSON_CODE']
 
-            data['authorPersonId'] = contentItem['author_person_id']
+            data['authorPersonId'] = contentItem['AUTHOR_PERSON_ID']
 
-            data['batchNo'] = contentItem['batch_no']
+            data['batchNo'] = contentItem['BATCH_NO']
 
-            data['beginDate'] = contentItem['begin_date']
+            data['beginDate'] = contentItem['BEGIN_DATE']
 
-            data['checkPersonCode'] = contentItem['check_person_code']
+            data['checkPersonCode'] = contentItem['CHECK_PERSON_CODE']
 
-            data['checkPersonId'] = contentItem['check_person_id']
+            data['checkPersonId'] = contentItem['CHECK_PERSON_ID']
 
-            data['content'] = contentItem['content']
+            data['content'] = contentItem['CONTENT']
 
-            data['createdByCode'] = contentItem['created_by_code']
+            data['createdByCode'] = contentItem['CREATED_BY_CODE']
 
-            data['createdById'] = contentItem['created_by_id']
+            data['createdById'] = contentItem['CREATED_BY_ID']
 
-            data['createdDate'] = contentItem['created_date']
+            data['createdDate'] = contentItem['CREATED_DATE']
 
-            data['dataStateCode'] = contentItem['data_state_code']
+            data['dataStateCode'] = contentItem['DATA_STATE_CODE']
 
-            data['departmentCode'] = contentItem['department_code']
+            data['departmentCode'] = contentItem['DEPARTMENT_CODE']
 
-            data['departmentCodes'] = contentItem['department_codes']
+            data['departmentCodes'] = contentItem['DEPARTMENT_CODES']
 
-            data['departmentIds'] = contentItem['department_ids']
+            data['departmentIds'] = contentItem['DEPARTMENT_IDS']
 
-            data['endDate'] = contentItem['end_date']
+            data['endDate'] = contentItem['END_DATE']
 
-            data['flagCode'] = contentItem['flag_code']
+            data['flagCode'] = contentItem['FLAG_CODE']
 
-            data['flagObjectCode'] = contentItem['flag_object_code']
+            data['flagObjectCode'] = contentItem['FLAG_OBJECT_CODE']
 
-            data['jsonData'] = contentItem['json_data']
+            data['jsonData'] = contentItem['JSON_DATA']
 
-            data['lastModifiedByCode'] = contentItem['last_modified_by_code']
+            data['lastModifiedByCode'] = contentItem['LAST_MODIFIED_BY_CODE']
 
-            data['lastModifiedById'] = contentItem['last_modified_by_id']
+            data['lastModifiedById'] = contentItem['LAST_MODIFIED_BY_ID']
 
-            data['lastModifiedDate'] = contentItem['last_modified_date']
+            data['lastModifiedDate'] = contentItem['LAST_MODIFIED_DATE']
 
-            data['noticeId'] = contentItem['notice_id']
+            data['noticeId'] = contentItem['NOTICE_ID']
 
-            data['orderBy'] = contentItem['order_by_']
+            data['orderBy'] = contentItem['ORDER_BY_']
 
-            data['orgCode'] = contentItem['org_code']
+            data['orgCode'] = contentItem['ORG_CODE']
 
-            data['orgCodes'] = contentItem['org_codes']
+            data['orgCodes'] = contentItem['ORG_CODES']
 
-            data['orgIds'] = contentItem['org_ids']
+            data['orgIds'] = contentItem['ORG_IDS']
 
-            data['personalCode'] = contentItem['personal_code']
+            data['personalCode'] = contentItem['PERSONAL_CODE']
 
-            data['personalId'] = contentItem['personal_id']
+            data['personalId'] = contentItem['PERSONAL_ID']
 
-            data['pictureUrl'] = contentItem['picture_url']
+            data['pictureUrl'] = contentItem['PICTURE_URL']
 
-            data['siteCode'] = contentItem['site_code']
+            data['siteCode'] = contentItem['SITE_CODE']
 
-            data['sourcesCode'] = contentItem['sources_code']
+            data['sourcesCode'] = contentItem['SOURCES_CODE']
 
-            data['stateCode'] = contentItem['state_code']
+            data['stateCode'] = contentItem['STATE_CODE']
 
-            data['systemInfoCode'] = contentItem['system_info_code']
+            data['systemInfoCode'] = contentItem['SYSTEM_INFO_CODE']
 
-            data['title'] = contentItem['title']
+            data['title'] = contentItem['TITLE']
 
-            data['typeCode'] = contentItem['type_code']
+            data['typeCode'] = contentItem['TYPE_CODE']
 
-            data['version'] = contentItem['version_']
+            data['version'] = contentItem['VERSION_']
 
             data['flagName'] = top.cardone.configuration.utils.DictionaryUtils.readOneByDictionaryTypeCodesCache(['dictionaryTypeCodes': 'noticeFlag,flag', 'dictionaryCode': contentItem['flag_code'], 'stateCode': '1', 'dataStateCode': '1',  'object_id': 'name'])
 
