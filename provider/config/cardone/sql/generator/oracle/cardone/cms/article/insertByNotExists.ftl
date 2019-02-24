@@ -309,7 +309,7 @@ ${prefixName?string('  ', ', ')}:insert_title_value
 ${prefixName?string('  ', ', ')}:insert_version_value
 <#assign prefixName = false>
 </#if>
-WHERE NOT EXISTS (SELECT 1 FROM C1_ARTICLE E
+FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM C1_ARTICLE E
 <#assign prefixName = true>
 <#if (where_and_eq_articleId??)>
 <#if (where_and_eq_articleId_value??)>
