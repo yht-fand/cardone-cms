@@ -1,5 +1,6 @@
 MERGE INTO C1_ARTICLE A USING
-(<#assign prefixName = true>
+(SELECT
+<#assign prefixName = true>
 <#if (index_articleId??)>
 ${prefixName?string('', ', ')} :index_articleId_value AS ARTICLE_ID
 <#assign prefixName = false>
@@ -152,7 +153,7 @@ ${prefixName?string('', ', ')} :index_title_value AS TITLE
 ${prefixName?string('', ', ')} :index_version_value AS VERSION_
 <#assign prefixName = false>
 </#if>
- from dual)B
+ FROM DUAL) B
 ON (
 <#assign prefixName = true>
 <#if (index_articleId??)>

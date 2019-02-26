@@ -1,5 +1,6 @@
 MERGE INTO C1_NOTICE A USING
-(<#assign prefixName = true>
+(SELECT
+<#assign prefixName = true>
 <#if (index_authorPersonCode??)>
 ${prefixName?string('', ', ')} :index_authorPersonCode_value AS AUTHOR_PERSON_CODE
 <#assign prefixName = false>
@@ -144,7 +145,7 @@ ${prefixName?string('', ', ')} :index_typeCode_value AS TYPE_CODE
 ${prefixName?string('', ', ')} :index_version_value AS VERSION_
 <#assign prefixName = false>
 </#if>
- from dual)B
+ FROM DUAL) B
 ON (
 <#assign prefixName = true>
 <#if (index_authorPersonCode??)>
